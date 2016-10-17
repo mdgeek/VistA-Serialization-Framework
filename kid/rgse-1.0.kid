@@ -1,11 +1,11 @@
-KIDS Distribution saved on Aug 09, 2016@10:38:55
+KIDS Distribution saved on Oct 17, 2016@15:29:55
 SERIALIZATION FRAMEWORK 1.0
 **KIDS**:SERIALIZATION FRAMEWORK 1.0^
 
 **INSTALL NAME**
 SERIALIZATION FRAMEWORK 1.0
 "BLD",8505,0)
-SERIALIZATION FRAMEWORK 1.0^SERIALIZATION FRAMEWORK^0^3160809^n
+SERIALIZATION FRAMEWORK 1.0^SERIALIZATION FRAMEWORK^0^3161017^n
 "BLD",8505,1,0)
 ^^2^2^3150301.07231
 "BLD",8505,1,1,0)
@@ -29,7 +29,7 @@ y^y^f^^n^^y^r^n
 "BLD",8505,4,"B",998.1,998.1)
 
 "BLD",8505,6.3)
-492
+495
 "BLD",8505,"ABPKG")
 n
 "BLD",8505,"INI")
@@ -2309,13 +2309,13 @@ S IENS=IENS_RGSER("SER")_","
 "DATA",998.1,3,10,22,30,0)
 ^998.12I^6^6
 "DATA",998.1,3,10,22,30,1,0)
-define^.01^C^100
+codeSystem^.01^C^100
 "DATA",998.1,3,10,22,30,1,10)
 D NEWTAG(PN),PUT("system",$$SYSTEM^RGSER("@"_VL("E"))),GET^RGSERGET(.RGSER,"*/"_VL("E"),,"concept"),ENDTAG(PN)
 "DATA",998.1,3,10,22,30,2,0)
 identifier^.01^C^10
 "DATA",998.1,3,10,22,30,2,10)
-D PUT(PN,$$SYSTEM^RGSER("@vs/"_$P(VL("E"),"_",2,99)))
+D IDENT($$SYSTEM^RGSER("@vs/"_$P(VL("E"),"_",2,99)),"encounter-type")
 "DATA",998.1,3,10,22,30,3,0)
 name^.01^C^20
 "DATA",998.1,3,10,22,30,3,10)
@@ -3133,7 +3133,7 @@ attr:url^^N^1
 "DATA",998.1,3,10,56,30,2,10)
 http://hl7.org/fhir/StructureDefinition/patient-congregation
 "DATA",998.1,3,20,0)
-^998.14^5^5^3160808^^^^
+^998.14^5^5^3161017^^^^
 "DATA",998.1,3,20,1,0)
 Access-Control-Allow-Credentials: true
 "DATA",998.1,3,20,2,0)
@@ -3145,7 +3145,7 @@ Access-Control-Allow-Origin: *
 "DATA",998.1,3,20,5,0)
 Cache-Control: max-age=0
 "DATA",998.1,3,99,0)
-^998.199^29^29^3160808^^^^
+^998.199^29^29^3161017^^^^
 "DATA",998.1,3,99,1,0)
 This is the base URL for the DSTU2 XML FHIR endpoint. 
 "DATA",998.1,3,99,2,0)
@@ -5361,13 +5361,13 @@ S IENS=IENS_RGSER("SER")_","
 "DATA",998.1,5,10,22,30,0)
 ^998.12I^6^6
 "DATA",998.1,5,10,22,30,1,0)
-define^.01^C^100
+codeSystem^.01^C^100
 "DATA",998.1,5,10,22,30,1,10)
 D NEWOBJ(PN),PUT("system",$$SYSTEM^RGSER("@"_VL("E"))),GET^RGSERGET(.RGSER,"*/"_VL("E"),,"concept"),ENDOBJ(PN)
 "DATA",998.1,5,10,22,30,2,0)
 identifier^.01^C^10
 "DATA",998.1,5,10,22,30,2,10)
-D PUT(PN,$$SYSTEM^RGSER("@vs/"_$P(VL("E"),"_",2,99)))
+D IDENT($$SYSTEM^RGSER("@vs/"_$P(VL("E"),"_",2,99)),"encounter-type")
 "DATA",998.1,5,10,22,30,3,0)
 name^.01^C^20
 "DATA",998.1,5,10,22,30,3,10)
@@ -6463,9 +6463,9 @@ SERIALIZATION FRAMEWORK^RGSE^Serialization framework
 "PKG",224,22,0)
 ^9.49I^1^1
 "PKG",224,22,1,0)
-1.0^3160809
+1.0^3161017
 "PKG",224,22,1,1,0)
-^^2^2^3160809
+^^2^2^3161017
 "PKG",224,22,1,1,1,0)
 Framework for serializing and deserializing data for transport to and from
 "PKG",224,22,1,1,2,0)
@@ -6551,7 +6551,7 @@ D XPZ2^XPDIQ
 "RTN","RGSEFHIJ",1,0)
 RGSEFHIJ ;RI/CBMI/DKM - JSON FHIR Support ;08-Aug-2016 08:13;DKM
 "RTN","RGSEFHIJ",2,0)
- ;;1.0;SERIALIZATION FRAMEWORK;;07-Feb-2015 08:51;Build 492
+ ;;1.0;SERIALIZATION FRAMEWORK;;07-Feb-2015 08:51;Build 495
 "RTN","RGSEFHIJ",3,0)
  ;=================================================================
 "RTN","RGSEFHIJ",4,0)
@@ -6991,7 +6991,7 @@ NAME(NAME,USE) ;
 "RTN","RGSEFHIR",1,0)
 RGSEFHIR ;RI/CBMI/DKM - Generic FHIR Support ;08-Aug-2016 08:42;DKM
 "RTN","RGSEFHIR",2,0)
- ;;1.0;SERIALIZATION FRAMEWORK;;07-Feb-2015 08:51;Build 492
+ ;;1.0;SERIALIZATION FRAMEWORK;;07-Feb-2015 08:51;Build 495
 "RTN","RGSEFHIR",3,0)
  ;=================================================================
 "RTN","RGSEFHIR",4,0)
@@ -7183,7 +7183,7 @@ PARSIDTP(TYPE) ;
 "RTN","RGSEFHIX",1,0)
 RGSEFHIX ;RI/CBMI/DKM - XML FHIR Support ;08-Aug-2016 08:13;DKM
 "RTN","RGSEFHIX",2,0)
- ;;1.0;SERIALIZATION FRAMEWORK;;07-Feb-2015 08:51;Build 492
+ ;;1.0;SERIALIZATION FRAMEWORK;;07-Feb-2015 08:51;Build 495
 "RTN","RGSEFHIX",3,0)
  ;=================================================================
 "RTN","RGSEFHIX",4,0)
@@ -7629,7 +7629,7 @@ NAME(NAME,USE) ;
 "RTN","RGSEINIT",1,0)
 RGSEINIT ;RI/CBMI/DKM - Installation Support ;19-Mar-2015 13:31;DKM
 "RTN","RGSEINIT",2,0)
- ;;1.0;SERIALIZATION FRAMEWORK;;07-Feb-2015 08:51;Build 492
+ ;;1.0;SERIALIZATION FRAMEWORK;;07-Feb-2015 08:51;Build 495
 "RTN","RGSEINIT",3,0)
  ;=================================================================
 "RTN","RGSEINIT",4,0)
@@ -7669,7 +7669,7 @@ POST Q
 "RTN","RGSEJSON",1,0)
 RGSEJSON ;RI/CBMI/DKM - JSON Serialization Support ;22-Apr-2015 11:31;DKM
 "RTN","RGSEJSON",2,0)
- ;;1.0;SERIALIZATION FRAMEWORK;;14-March-2014;Build 492
+ ;;1.0;SERIALIZATION FRAMEWORK;;14-March-2014;Build 495
 "RTN","RGSEJSON",3,0)
  ;=================================================================
 "RTN","RGSEJSON",4,0)
@@ -8147,7 +8147,7 @@ ADD(X) D ADD^RGNETWWW(X)
 "RTN","RGSER",1,0)
 RGSER ;RI/CBMI/DKM - Core Serialization Support ;07-Aug-2016 04:44;DKM
 "RTN","RGSER",2,0)
- ;;1.0;SERIALIZATION FRAMEWORK;;14-March-2014;Build 492
+ ;;1.0;SERIALIZATION FRAMEWORK;;14-March-2014;Build 495
 "RTN","RGSER",3,0)
  ; RPC: Perform a GET operation
 "RTN","RGSER",4,0)
@@ -8379,7 +8379,7 @@ ISMATCH(PATH,PTRN) ;
 "RTN","RGSERDD",1,0)
 RGSERDD ;RI/CBMI/DKM - Data dictionary logic ;28-May-2015 09:34;DKM
 "RTN","RGSERDD",2,0)
- ;;1.0;SERIALIZATION FRAMEWORK;;14-March-2014;Build 492
+ ;;1.0;SERIALIZATION FRAMEWORK;;14-March-2014;Build 495
 "RTN","RGSERDD",3,0)
  ;=================================================================
 "RTN","RGSERDD",4,0)
@@ -8423,7 +8423,7 @@ ITXCTRL(X,DA) ;
 "RTN","RGSERDOC",1,0)
 RGSERDOC ;RI/CBMI/DKM - Document Resource Support ;31-Mar-2015 22:52;DKM
 "RTN","RGSERDOC",2,0)
- ;;1.0;SERIALIZATION FRAMEWORK;;07-Feb-2015 08:51;Build 492
+ ;;1.0;SERIALIZATION FRAMEWORK;;07-Feb-2015 08:51;Build 495
 "RTN","RGSERDOC",3,0)
  ;=================================================================
 "RTN","RGSERDOC",4,0)
@@ -8459,7 +8459,7 @@ TOBINARY(IEN,PRE,PST) ;
 "RTN","RGSERENC",1,0)
 RGSERENC ;RI/CBMI/DKM - Encounter Resource Support ;01-Apr-2015 16:50;DKM
 "RTN","RGSERENC",2,0)
- ;;1.0;SERIALIZATION FRAMEWORK;;07-Feb-2015 08:51;Build 492
+ ;;1.0;SERIALIZATION FRAMEWORK;;07-Feb-2015 08:51;Build 495
 "RTN","RGSERENC",3,0)
  ;=================================================================
 "RTN","RGSERENC",4,0)
@@ -8523,7 +8523,7 @@ VISREFDT(IEN) ;
 "RTN","RGSERGET",1,0)
 RGSERGET ;RI/CBMI/DKM - GET method support ;07-Aug-2016 04:32;DKM
 "RTN","RGSERGET",2,0)
- ;;1.0;SERIALIZATION FRAMEWORK;;14-March-2014;Build 492
+ ;;1.0;SERIALIZATION FRAMEWORK;;14-March-2014;Build 495
 "RTN","RGSERGET",3,0)
  ;=================================================================
 "RTN","RGSERGET",4,0)
@@ -9469,7 +9469,7 @@ F(FN,SB,ESC) ;
 "RTN","RGSERLAB",1,0)
 RGSERLAB ;RI/CBMI/DKM - Return lab observations. ;04-Aug-2016 22:02;DKM
 "RTN","RGSERLAB",2,0)
- ;;1.0;SERIALIZATION FRAMEWORK;;07-Feb-2015 08:51;Build 492
+ ;;1.0;SERIALIZATION FRAMEWORK;;07-Feb-2015 08:51;Build 495
 "RTN","RGSERLAB",3,0)
  ;=================================================================
 "RTN","RGSERLAB",4,0)
@@ -9685,7 +9685,7 @@ PUT(NAME,INTERNAL,EXTERNAL) ;
 "RTN","RGSERLOC",1,0)
 RGSERLOC ;RI/CBMI/DKM - Location Resource Support ;04-Aug-2016 23:16;DKM
 "RTN","RGSERLOC",2,0)
- ;;1.0;SERIALIZATION FRAMEWORK;;07-Feb-2015 08:51;Build 492
+ ;;1.0;SERIALIZATION FRAMEWORK;;07-Feb-2015 08:51;Build 495
 "RTN","RGSERLOC",3,0)
  ;=================================================================
 "RTN","RGSERLOC",4,0)
@@ -9731,7 +9731,7 @@ GETSTAT(INACT,REACT) ;
 "RTN","RGSEROBS",1,0)
 RGSEROBS ;RI/CBMI/DKM - Return observations in intermediate format. ;01-Apr-2015 16:50;DKM
 "RTN","RGSEROBS",2,0)
- ;;1.0;SERIALIZATION FRAMEWORK;;07-Feb-2015 08:51;Build 492
+ ;;1.0;SERIALIZATION FRAMEWORK;;07-Feb-2015 08:51;Build 495
 "RTN","RGSEROBS",3,0)
  ;=================================================================
 "RTN","RGSEROBS",4,0)
@@ -9961,7 +9961,7 @@ RELJSN(RELATED) ;
 "RTN","RGSERPAT",1,0)
 RGSERPAT ;RI/CBMI/DKM - Patient Resource Support ;04-Aug-2016 18:18;DKM
 "RTN","RGSERPAT",2,0)
- ;;1.0;SERIALIZATION FRAMEWORK;;07-Feb-2015 08:51;Build 492
+ ;;1.0;SERIALIZATION FRAMEWORK;;07-Feb-2015 08:51;Build 495
 "RTN","RGSERPAT",3,0)
  ;=================================================================
 "RTN","RGSERPAT",4,0)
@@ -10015,7 +10015,7 @@ COUNTY(STATE,COUNTY) ;
 "RTN","RGSERPER",1,0)
 RGSERPER ;RI/CBMI/DKM - User/Practitioner/Person Resource Support ;31-Mar-2015 18:40;DKM
 "RTN","RGSERPER",2,0)
- ;;1.0;SERIALIZATION FRAMEWORK;;07-Feb-2015 08:51;Build 492
+ ;;1.0;SERIALIZATION FRAMEWORK;;07-Feb-2015 08:51;Build 495
 "RTN","RGSERPER",3,0)
  ;=================================================================
 "RTN","RGSERPER",4,0)
@@ -10031,7 +10031,7 @@ NAMEITER(CTX) ;
 "RTN","RGSERVIT",1,0)
 RGSERVIT ;RI/CBMI/DKM - Return vital observations. ;17-Apr-2015 12:44;DKM
 "RTN","RGSERVIT",2,0)
- ;;1.0;SERIALIZATION FRAMEWORK;;07-Feb-2015 08:51;Build 492
+ ;;1.0;SERIALIZATION FRAMEWORK;;07-Feb-2015 08:51;Build 495
 "RTN","RGSERVIT",3,0)
  ;=================================================================
 "RTN","RGSERVIT",4,0)
@@ -10239,7 +10239,7 @@ RANGES N VAL
 "RTN","RGSEXML",1,0)
 RGSEXML ;RI/CBMI/DKM - XML Support ;08-Apr-2015 17:02;DKM
 "RTN","RGSEXML",2,0)
- ;;1.0;SERIALIZATION FRAMEWORK;;14-March-2014;Build 492
+ ;;1.0;SERIALIZATION FRAMEWORK;;14-March-2014;Build 495
 "RTN","RGSEXML",3,0)
  ;=================================================================
 "RTN","RGSEXML",4,0)
