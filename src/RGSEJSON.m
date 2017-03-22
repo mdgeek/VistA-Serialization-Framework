@@ -1,4 +1,4 @@
-RGSEJSON ;RI/CBMI/DKM - JSON Serialization Support ;22-Apr-2015 11:31;DKM
+RGSEJSON ;RI/CBMI/DKM - JSON Serialization Support ;21-Mar-2017 15:43;DKM
  ;;1.0;SERIALIZATION FRAMEWORK;;14-March-2014;Build 1
  ;=================================================================
  ; Implements Serializer interface
@@ -158,9 +158,12 @@ ENDARY(NM) ;
  D ENDLVL(.NM,0)
  Q
  ; Returns true if inside an array
-INARY() N LVL
+INARY(NM) ;
+ N LVL
  S LVL=$$GETLVL
- Q $S('LVL:0,1:'RGSER("L",LVL,0))
+ Q:'LVL 0
+ Q:RGSER("L",LVL,0) 0
+ Q $S('$D(NM):1,1:RGSER("L",LVL,1)=NM)
  ; Start an object level
 NEWOBJ(NM) ;
  D NEWLVL(.NM,1)

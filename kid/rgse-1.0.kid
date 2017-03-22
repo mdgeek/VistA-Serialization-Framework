@@ -1,11 +1,11 @@
-KIDS Distribution saved on Oct 17, 2016@15:29:55
+KIDS Distribution saved on Mar 22, 2017@08:41:13
 SERIALIZATION FRAMEWORK 1.0
 **KIDS**:SERIALIZATION FRAMEWORK 1.0^
 
 **INSTALL NAME**
 SERIALIZATION FRAMEWORK 1.0
 "BLD",8505,0)
-SERIALIZATION FRAMEWORK 1.0^SERIALIZATION FRAMEWORK^0^3161017^n
+SERIALIZATION FRAMEWORK 1.0^SERIALIZATION FRAMEWORK^0^3170322^n
 "BLD",8505,1,0)
 ^^2^2^3150301.07231
 "BLD",8505,1,1,0)
@@ -29,7 +29,7 @@ y^y^f^^n^^y^r^n
 "BLD",8505,4,"B",998.1,998.1)
 
 "BLD",8505,6.3)
-495
+505
 "BLD",8505,"ABPKG")
 n
 "BLD",8505,"INI")
@@ -101,7 +101,7 @@ POST^RGSEINIT
 "BLD",8505,"KRN",9.8,"NM",1,0)
 RGSEFHIR^^0^B10444581
 "BLD",8505,"KRN",9.8,"NM",2,0)
-RGSEJSON^^0^B29088608
+RGSEJSON^^0^B29696478
 "BLD",8505,"KRN",9.8,"NM",3,0)
 RGSER^^0^B14022816
 "BLD",8505,"KRN",9.8,"NM",4,0)
@@ -123,7 +123,7 @@ RGSERDD^^0^B836104
 "BLD",8505,"KRN",9.8,"NM",13,0)
 RGSERPER^^0^B151306
 "BLD",8505,"KRN",9.8,"NM",14,0)
-RGSEFHIJ^^0^B36664521
+RGSEFHIJ^^0^B37593330
 "BLD",8505,"KRN",9.8,"NM",15,0)
 RGSEFHIX^^0^B39749268
 "BLD",8505,"KRN",9.8,"NM",17,0)
@@ -249,6 +249,10 @@ MGET^RGSER
 "DATA",996.52,2,0)
 DSTU#/*^GET^BASIC
 "DATA",996.52,2,10)
+MGET^RGSER
+"DATA",996.52,10,0)
+STU#/*^GET^
+"DATA",996.52,10,10)
 MGET^RGSER
 "DATA",998.1,1,0)
 CWF^application/json,text/json^RGSEJSON^1.0
@@ -719,7 +723,7 @@ D IDENT("@identifiers/patients",$$HRN^RGSERPAT(IEN),PN(0))
 "DATA",998.1,2,10,13,30,6,0)
 managingOrganization^^C^80
 "DATA",998.1,2,10,13,30,6,10)
-D GET^RGSERGET(.RGSER,"*/Organization_Reference",DUZ(2),PN)
+D:$G(DUZ(2)) GET^RGSERGET(.RGSER,"*/Organization_Reference",DUZ(2),PN)
 "DATA",998.1,2,10,13,30,7,0)
 photo^^C^80
 "DATA",998.1,2,10,13,30,7,10)
@@ -1589,7 +1593,7 @@ Access-Control-Allow-Origin: *
 "DATA",998.1,2,20,5,0)
 Cache-Control: max-age=0
 "DATA",998.1,2,99,0)
-^998.199^25^25^3150625^^^^
+^^25^25^3170322.083521
 "DATA",998.1,2,99,1,0)
 This is the base URL for the DSTU1 XML FHIR endpoint. 
 "DATA",998.1,2,99,2,0)
@@ -1613,7 +1617,7 @@ target="_blank">Regenstrief Institute.<a>
 "DATA",998.1,2,99,11,0)
 It is freely available as open source under the 
 "DATA",998.1,2,99,12,0)
-<a href="https://www.mozilla.org/MPL/2.0/" target="_blank">MPL 2.0 license</a>:
+<a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License, Version 2.0</a>:
 "DATA",998.1,2,99,13,0)
 
 "DATA",998.1,2,99,14,0)
@@ -2053,7 +2057,7 @@ D IDENT("@identifiers/patients",$$HRN^RGSERPAT(IEN),PN(0))
 "DATA",998.1,3,10,13,30,6,0)
 managingOrganization^^C^80
 "DATA",998.1,3,10,13,30,6,10)
-D GET^RGSERGET(.RGSER,"*/Organization_Reference",DUZ(2),PN)
+D:$G(DUZ(2)) GET^RGSERGET(.RGSER,"*/Organization_Reference",DUZ(2),PN)
 "DATA",998.1,3,10,13,30,7,0)
 photo^^C^80
 "DATA",998.1,3,10,13,30,7,10)
@@ -3133,7 +3137,7 @@ attr:url^^N^1
 "DATA",998.1,3,10,56,30,2,10)
 http://hl7.org/fhir/StructureDefinition/patient-congregation
 "DATA",998.1,3,20,0)
-^998.14^5^5^3161017^^^^
+^998.14^5^5^3170321^^^^
 "DATA",998.1,3,20,1,0)
 Access-Control-Allow-Credentials: true
 "DATA",998.1,3,20,2,0)
@@ -3145,7 +3149,7 @@ Access-Control-Allow-Origin: *
 "DATA",998.1,3,20,5,0)
 Cache-Control: max-age=0
 "DATA",998.1,3,99,0)
-^998.199^29^29^3161017^^^^
+^^29^29^3170322.0837
 "DATA",998.1,3,99,1,0)
 This is the base URL for the DSTU2 XML FHIR endpoint. 
 "DATA",998.1,3,99,2,0)
@@ -3177,7 +3181,7 @@ target="_blank">Regenstrief Institute.<a>
 "DATA",998.1,3,99,15,0)
 It is freely available as open source under the 
 "DATA",998.1,3,99,16,0)
-<a href="https://www.mozilla.org/MPL/2.0/" target="_blank">MPL 2.0 license</a>:
+<a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License, Version 2.0</a>:
 "DATA",998.1,3,99,17,0)
 
 "DATA",998.1,3,99,18,0)
@@ -3597,7 +3601,7 @@ D IDENT("@identifiers/patients",$$HRN^RGSERPAT(IEN),PN(0))
 "DATA",998.1,4,10,13,30,6,0)
 managingOrganization^^C^80
 "DATA",998.1,4,10,13,30,6,10)
-D GET^RGSERGET(.RGSER,"*/Organization_Reference",DUZ(2),PN)
+D:$G(DUZ(2)) GET^RGSERGET(.RGSER,"*/Organization_Reference",DUZ(2),PN)
 "DATA",998.1,4,10,13,30,7,0)
 photo^^C^80
 "DATA",998.1,4,10,13,30,7,10)
@@ -4557,7 +4561,7 @@ Access-Control-Allow-Origin: *
 "DATA",998.1,4,20,5,0)
 Cache-Control: max-age=0
 "DATA",998.1,4,99,0)
-^998.199^25^25^3150420^^^^
+^^25^25^3170322.083643
 "DATA",998.1,4,99,1,0)
 This is the base URL for the DSTU1 JSON FHIR endpoint. 
 "DATA",998.1,4,99,2,0)
@@ -4581,7 +4585,7 @@ target="_blank">Regenstrief Institute.<a>
 "DATA",998.1,4,99,11,0)
 It is freely available as open source under the 
 "DATA",998.1,4,99,12,0)
-<a href="https://www.mozilla.org/MPL/2.0/" target="_blank">MPL 2.0 license</a>:
+<a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License, Version 2.0</a>:
 "DATA",998.1,4,99,13,0)
 
 "DATA",998.1,4,99,14,0)
@@ -5039,7 +5043,7 @@ D IDENT("@identifiers/patients",$$HRN^RGSERPAT(IEN),PN(0))
 "DATA",998.1,5,10,13,30,6,0)
 managingOrganization^^C^80
 "DATA",998.1,5,10,13,30,6,10)
-D GET^RGSERGET(.RGSER,"*/Organization_Reference",DUZ(2),PN)
+D:$G(DUZ(2)) GET^RGSERGET(.RGSER,"*/Organization_Reference",DUZ(2),PN)
 "DATA",998.1,5,10,13,30,7,0)
 photo^^C^80
 "DATA",998.1,5,10,13,30,7,10)
@@ -6101,7 +6105,7 @@ state^.115^F^60
 "DATA",998.1,5,10,49,30,7,0)
 postalCode^.116^F^80
 "DATA",998.1,5,10,50,0)
-Diagnostic_Order
+DiagnosticOrder
 "DATA",998.1,5,10,51,0)
 Patient_Congregation^1^13
 "DATA",998.1,5,10,51,30,0)
@@ -6113,7 +6117,7 @@ attr:url^^N^1
 "DATA",998.1,5,10,51,30,2,10)
 http://hl7.org/fhir/StructureDefinition/patient-congregation
 "DATA",998.1,5,20,0)
-^998.14^5^5^3160808^^^^
+^998.14^5^5^3170321^^^^
 "DATA",998.1,5,20,1,0)
 Access-Control-Allow-Credentials: true
 "DATA",998.1,5,20,2,0)
@@ -6125,9 +6129,9 @@ Access-Control-Allow-Origin: *
 "DATA",998.1,5,20,5,0)
 Cache-Control: max-age=0
 "DATA",998.1,5,99,0)
-^998.199^25^25^3160808^^^^
+^^25^25^3170322.083713
 "DATA",998.1,5,99,1,0)
-This is the base URL for the DSTU1 JSON FHIR endpoint. 
+This is the base URL for the DSTU2 JSON FHIR endpoint. 
 "DATA",998.1,5,99,2,0)
 
 "DATA",998.1,5,99,3,0)
@@ -6149,7 +6153,7 @@ target="_blank">Regenstrief Institute.<a>
 "DATA",998.1,5,99,11,0)
 It is freely available as open source under the 
 "DATA",998.1,5,99,12,0)
-<a href="https://www.mozilla.org/MPL/2.0/" target="_blank">MPL 2.0 license</a>:
+<a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License, Version 2.0</a>:
 "DATA",998.1,5,99,13,0)
 
 "DATA",998.1,5,99,14,0)
@@ -6157,7 +6161,7 @@ It is freely available as open source under the
 "DATA",998.1,5,99,15,0)
 <li> The FHIR conformance document is available
 "DATA",998.1,5,99,16,0)
-  <a href="/DSTU1/metadata?_format=json" target="_blank">here</a>
+  <a href="/DSTU2/metadata?_format=json" target="_blank">here</a>
 "DATA",998.1,5,99,17,0)
 </li>
 "DATA",998.1,5,99,18,0)
@@ -6175,6 +6179,3138 @@ It is freely available as open source under the
 "DATA",998.1,5,99,24,0)
      target="_blank">source.</a>
 "DATA",998.1,5,99,25,0)
+</ul>
+"DATA",998.1,6,0)
+STU3^application/fhir+xml,application/xml,text/xml,xml^RGSEFHIX^1.8.0
+"DATA",998.1,6,10,0)
+^998.11^56^56
+"DATA",998.1,6,10,1,0)
+Binary
+"DATA",998.1,6,10,1,10)
+D COMPID^RGSERGET
+"DATA",998.1,6,10,2,0)
+Binary_8925^1^8925
+"DATA",998.1,6,10,2,30,0)
+^998.12I^3^3
+"DATA",998.1,6,10,2,30,1,0)
+content^^C^10
+"DATA",998.1,6,10,2,30,1,10)
+D TOBINARY^RGSERDOC(IEN,"<content value=""",""" />")
+"DATA",998.1,6,10,2,30,2,0)
+id^@ienx^R^1
+"DATA",998.1,6,10,2,30,3,0)
+contentType^^S^1
+"DATA",998.1,6,10,2,30,3,10)
+text/plain
+"DATA",998.1,6,10,3,0)
+Condition^^9000011
+"DATA",998.1,6,10,3,30,0)
+^998.12I^9^9
+"DATA",998.1,6,10,3,30,1,0)
+patient^.02^C^10
+"DATA",998.1,6,10,3,30,1,10)
+D REF(PN,"Patient",.VL)
+"DATA",998.1,6,10,3,30,2,0)
+code!start^^C^20
+"DATA",998.1,6,10,3,30,2,10)
+D NEWTAG(PN)
+"DATA",998.1,6,10,3,30,3,0)
+coding^.01^O^20.1
+"DATA",998.1,6,10,3,30,3,10)
+*/ICD9
+"DATA",998.1,6,10,3,30,4,0)
+code!end^.05^C^20.2
+"DATA",998.1,6,10,3,30,4,10)
+D PUT("text",VL("E")),ENDTAG(PN)
+"DATA",998.1,6,10,3,30,5,0)
+category^^N^30
+"DATA",998.1,6,10,3,30,6,0)
+clinicalStatus^.12^C^40
+"DATA",998.1,6,10,3,30,6,10)
+D PUT(PN,$$LOW^XLFSTR(VL("E")))
+"DATA",998.1,6,10,3,30,7,0)
+onsetDate^.13^D^50
+"DATA",998.1,6,10,3,30,8,0)
+abatementDate^1.07^D^60
+"DATA",998.1,6,10,3,30,9,0)
+id^@id^R^1
+"DATA",998.1,6,10,3,40,0)
+^998.13I^4^4
+"DATA",998.1,6,10,3,40,1,0)
+patient^.02^R^10
+"DATA",998.1,6,10,3,40,1,20)
+S X=$$COHORT(PN,$NA(^AUPNPROB("AC")))
+"DATA",998.1,6,10,3,40,2,0)
+onset^.13^D^20
+"DATA",998.1,6,10,3,40,3,0)
+patient:Patient^.02^R^10
+"DATA",998.1,6,10,3,40,3,20)
+S X=$$COHORT(PN,$NA(^AUPNPROB("AC")))
+"DATA",998.1,6,10,3,40,4,0)
+_id^@ien^T^30
+"DATA",998.1,6,10,4,0)
+DocumentReference^^8925
+"DATA",998.1,6,10,4,30,0)
+^998.12I^26^25
+"DATA",998.1,6,10,4,30,1,0)
+description^1701^F^140
+"DATA",998.1,6,10,4,30,2,0)
+type^.01^C^40
+"DATA",998.1,6,10,4,30,2,10)
+D CODING(PN,"#8925.1",VL("I"),VL("E"))
+"DATA",998.1,6,10,4,30,3,0)
+subject^.02^C^30
+"DATA",998.1,6,10,4,30,3,10)
+D REF(PN,"Patient",.VL)
+"DATA",998.1,6,10,4,30,4,0)
+author^1202^C^60
+"DATA",998.1,6,10,4,30,4,10)
+D REF(PN,"Practitioner",.VL)
+"DATA",998.1,6,10,4,30,5,0)
+contentType!content^^S^200.1
+"DATA",998.1,6,10,4,30,5,10)
+text/plain
+"DATA",998.1,6,10,4,30,6,0)
+created^1201^D^100
+"DATA",998.1,6,10,4,30,7,0)
+context^.07,.08^C^110
+"DATA",998.1,6,10,4,30,7,10)
+D NEWTAG(PN),PERIOD(VL("I"),VL(2,"I")),ENDTAG(PN)
+"DATA",998.1,6,10,4,30,9,0)
+url!content^@ien^C^200.4
+"DATA",998.1,6,10,4,30,9,10)
+D PUT(PN,$$HOSTURL^RGNETWWW("*/Binary/8925-"_VL("I")))
+"DATA",998.1,6,10,4,30,10,0)
+masterIdentifier^@ien^C^10
+"DATA",998.1,6,10,4,30,10,10)
+D NEWTAG(PN),PUT("value",$$SYSUUID^RGNETWWW_"/Document/"_VL("I")),ENDTAG(PN)
+"DATA",998.1,6,10,4,30,11,0)
+status^.05~.02^C^120
+"DATA",998.1,6,10,4,30,11,10)
+N X S X=VL("I") D PUT(PN,$S("rd"[X:"entered-in-error",1:"current"))
+"DATA",998.1,6,10,4,30,12,0)
+id^@id^R^1
+"DATA",998.1,6,10,4,30,13,0)
+identifier^^N^20
+"DATA",998.1,6,10,4,30,14,0)
+class^^N^50
+"DATA",998.1,6,10,4,30,15,0)
+custodian^^N^70
+"DATA",998.1,6,10,4,30,16,0)
+title!content^^N^200.7
+"DATA",998.1,6,10,4,30,17,0)
+authenticator^^N^90
+"DATA",998.1,6,10,4,30,18,0)
+indexed^1201^D^110
+"DATA",998.1,6,10,4,30,19,0)
+docStatus^^N^130
+"DATA",998.1,6,10,4,30,20,0)
+confidentiality^^N^150
+"DATA",998.1,6,10,4,30,21,0)
+language!content^^N^200.2
+"DATA",998.1,6,10,4,30,22,0)
+format^^N^180
+"DATA",998.1,6,10,4,30,23,0)
+size!content^^N^200.5
+"DATA",998.1,6,10,4,30,24,0)
+hash!content^^N^200.6
+"DATA",998.1,6,10,4,30,25,0)
+content!start^^C^200
+"DATA",998.1,6,10,4,30,25,10)
+D NEWTAG(PN)
+"DATA",998.1,6,10,4,30,26,0)
+content!end^^C^200.9
+"DATA",998.1,6,10,4,30,26,10)
+D ENDTAG(PN)
+"DATA",998.1,6,10,4,40,0)
+^998.13I^6^6
+"DATA",998.1,6,10,4,40,1,0)
+subject:Patient^.02^R^10
+"DATA",998.1,6,10,4,40,1,20)
+S X=$$COHORT(PN,$NA(^TIU(8925,"C")))
+"DATA",998.1,6,10,4,40,2,0)
+period^1301^D^20
+"DATA",998.1,6,10,4,40,3,0)
+type^.01^T^30
+"DATA",998.1,6,10,4,40,4,0)
+author^1202^R^40
+"DATA",998.1,6,10,4,40,5,0)
+_id^@ien^T^50
+"DATA",998.1,6,10,4,40,6,0)
+indexed^1301^D^60
+"DATA",998.1,6,10,5,0)
+Encounter^^9000010
+"DATA",998.1,6,10,5,30,0)
+^998.12I^10^9
+"DATA",998.1,6,10,5,30,1,0)
+status^^C^10
+"DATA",998.1,6,10,5,30,1,10)
+D PUT(PN,$$GETSTAT^RGSERENC(IEN))
+"DATA",998.1,6,10,5,30,2,0)
+class^.07^C^20
+"DATA",998.1,6,10,5,30,2,10)
+N X S X=VL("I") D PUT(PN,$S(X="H":"inpatient",X="A":"ambulatory",1:"virtual"))
+"DATA",998.1,6,10,5,30,3,0)
+subject^.05^C^30
+"DATA",998.1,6,10,5,30,3,10)
+D REF(PN,"Patient",.VL)
+"DATA",998.1,6,10,5,30,4,0)
+period^.01,.18^C^40
+"DATA",998.1,6,10,5,30,4,10)
+D PERIOD(VL("I"),VL(2,"I"))
+"DATA",998.1,6,10,5,30,6,0)
+location^.01,.18,.22^C^60
+"DATA",998.1,6,10,5,30,6,10)
+D:VL(3) NEWTAG(PN),REF2(PN,"Location",VL(3,"I"),VL(3,"E")),PERIOD(VL("I"),VL(2,"I")),ENDTAG(PN)
+"DATA",998.1,6,10,5,30,7,0)
+identifier!visitid^15001^C^70
+"DATA",998.1,6,10,5,30,7,10)
+D IDENT("@identifiers/visits",VL("I"),PN(0),"official")
+"DATA",998.1,6,10,5,30,8,0)
+type^.07^C^80
+"DATA",998.1,6,10,5,30,8,10)
+D CODING(PN,"@types/visits",VL("I"),VL("E"))
+"DATA",998.1,6,10,5,30,9,0)
+participant^^C^90
+"DATA",998.1,6,10,5,30,9,10)
+D GET^RGSERGET(.RGSER,"*/Encounter_Participant",$NA(^AUPNVPRV("AD",IEN)),PN)
+"DATA",998.1,6,10,5,30,10,0)
+id^@id^R^1
+"DATA",998.1,6,10,5,40,0)
+^998.13I^5^4
+"DATA",998.1,6,10,5,40,1,0)
+patient^.05^R^10
+"DATA",998.1,6,10,5,40,1,20)
+S X=$$COHORT(PN,$NA(^AUPNVSIT("C")))
+"DATA",998.1,6,10,5,40,2,0)
+type^.07^T^20
+"DATA",998.1,6,10,5,40,3,0)
+date^.01,.18^D^20
+"DATA",998.1,6,10,5,40,5,0)
+_id^@ien^T^30
+"DATA",998.1,6,10,6,0)
+Encounter_Participant^1^9000010.06
+"DATA",998.1,6,10,6,30,0)
+^998.12I^3^3
+"DATA",998.1,6,10,6,30,1,0)
+type^.04^C^10
+"DATA",998.1,6,10,6,30,1,10)
+D:VL CODING(PN,"http://hl7.org/fhir/v3/ParticipationType",VL("I")_"PRF",VL("E"))
+"DATA",998.1,6,10,6,30,2,0)
+individual^.01^C^20
+"DATA",998.1,6,10,6,30,2,10)
+D REF(PN,"Practitioner",.VL)
+"DATA",998.1,6,10,6,30,3,0)
+type^.05^C^10.1
+"DATA",998.1,6,10,6,30,3,10)
+D:VL CODING(PN,"http://hl7.org/fhir/v3/ParticipationType",$S(VL("I")="A":"ATND",1:"PRF"),VL("E"))
+"DATA",998.1,6,10,7,0)
+ICD9^1^80
+"DATA",998.1,6,10,7,30,0)
+^998.12I^3^3
+"DATA",998.1,6,10,7,30,1,0)
+system^^C^20
+"DATA",998.1,6,10,7,30,1,10)
+D PUT("system","http://hl7.org/fhir/sid/icd-9")
+"DATA",998.1,6,10,7,30,2,0)
+code^.01^F^30
+"DATA",998.1,6,10,7,30,3,0)
+display^@ien^C^40
+"DATA",998.1,6,10,7,30,3,10)
+D PUT(PN,$$VSTD^ICDCODE(IEN))
+"DATA",998.1,6,10,8,0)
+Location^^44
+"DATA",998.1,6,10,8,30,0)
+^998.12I^8^8
+"DATA",998.1,6,10,8,30,1,0)
+name^.01^F^10
+"DATA",998.1,6,10,8,30,2,0)
+description^10^F^20
+"DATA",998.1,6,10,8,30,3,0)
+managingOrganization^3^C^30
+"DATA",998.1,6,10,8,30,3,10)
+D REF(PN,"Organization",.VL)
+"DATA",998.1,6,10,8,30,4,0)
+telecom!phone:work^99^C^40
+"DATA",998.1,6,10,8,30,4,10)
+D TELECOM
+"DATA",998.1,6,10,8,30,5,0)
+id^@id^R^1
+"DATA",998.1,6,10,8,30,6,0)
+mode^^S^50
+"DATA",998.1,6,10,8,30,6,10)
+instance
+"DATA",998.1,6,10,8,30,7,0)
+type^2,9^C^60
+"DATA",998.1,6,10,8,30,7,10)
+D CODING(PN,"http://hl7.org/fhir/v3/RoleCode",$$GETTYPE^RGSERLOC($G(VL("I")),$G(VL(2,"I"))))
+"DATA",998.1,6,10,8,30,8,0)
+status^2505,2506^C^70
+"DATA",998.1,6,10,8,30,8,10)
+D PUT(PN,$$GETSTAT^RGSERLOC($G(VL("I")),$G(VL(2,"I"))))
+"DATA",998.1,6,10,8,40,0)
+^998.13I^4^4
+"DATA",998.1,6,10,8,40,1,0)
+_id^@ien^T^10
+"DATA",998.1,6,10,8,40,2,0)
+type^2,9^T^10
+"DATA",998.1,6,10,8,40,2,10)
+S TP="",MATCH=PVAL=$$GETTYPE^RGSERLOC($G(VL("I")),$G(VL(2,"I")))
+"DATA",998.1,6,10,8,40,3,0)
+status^2505,2506^T^20
+"DATA",998.1,6,10,8,40,3,10)
+S TP="",MATCH=PVAL=$$GETSTAT^RGSERLOC($G(VL("I")),$G(VL(2,"I")))
+"DATA",998.1,6,10,8,40,4,0)
+name^.01^S^30
+"DATA",998.1,6,10,9,0)
+Observation
+"DATA",998.1,6,10,9,20)
+D RETRIEVE^RGSEROBS
+"DATA",998.1,6,10,9,30,0)
+^998.12I^20^17
+"DATA",998.1,6,10,9,30,1,0)
+issued^issued^D^60
+"DATA",998.1,6,10,9,30,2,0)
+status^status^F^70
+"DATA",998.1,6,10,9,30,3,0)
+reliability^reliability^F^80
+"DATA",998.1,6,10,9,30,4,0)
+subject^patient^C^120
+"DATA",998.1,6,10,9,30,4,10)
+D REF(PN,"Patient",.VL)
+"DATA",998.1,6,10,9,30,5,0)
+referenceRange^low,high^C^150
+"DATA",998.1,6,10,9,30,5,10)
+D RANGEXML^RGSEROBS($G(VL("I")),$G(VL(2,"I")))
+"DATA",998.1,6,10,9,30,7,0)
+comments^comments^F^40
+"DATA",998.1,6,10,9,30,8,0)
+appliesDateTime^collected^D^50
+"DATA",998.1,6,10,9,30,9,0)
+identifier^id^C^110
+"DATA",998.1,6,10,9,30,9,10)
+D IDENT("@observation",VL("I"))
+"DATA",998.1,6,10,9,30,10,0)
+code^code,code_system^C^10
+"DATA",998.1,6,10,9,30,10,10)
+D:VL CODING(PN,VL(2,"E"),VL("I"),VL("E"))
+"DATA",998.1,6,10,9,30,11,0)
+value^value,units^C^20
+"DATA",998.1,6,10,9,30,11,10)
+D VALUEXML^RGSEROBS($G(VL("I")),$G(VL(2,"I")))
+"DATA",998.1,6,10,9,30,12,0)
+interpretation^interpretation^C^30
+"DATA",998.1,6,10,9,30,12,10)
+D:VL NEWTAG(PN),PUT("text",VL("E")),ENDTAG(PN)
+"DATA",998.1,6,10,9,30,13,0)
+bodySite^^N^90
+"DATA",998.1,6,10,9,30,14,0)
+method^^N^100
+"DATA",998.1,6,10,9,30,15,0)
+specimen^^N^130
+"DATA",998.1,6,10,9,30,16,0)
+performer^^N^140
+"DATA",998.1,6,10,9,30,19,0)
+id^id^R^1
+"DATA",998.1,6,10,9,30,20,0)
+related^related^C^160
+"DATA",998.1,6,10,9,30,20,10)
+D:VL RELXML^RGSEROBS(VL("I"))
+"DATA",998.1,6,10,9,40,0)
+^998.13I^3^3
+"DATA",998.1,6,10,9,40,1,0)
+subject:Patient^patient^R^10
+"DATA",998.1,6,10,9,40,1,20)
+S X=$$OBS^RGSEROBS(RGNETREQ("PARAMS","subject:Patient",1,1))
+"DATA",998.1,6,10,9,40,2,0)
+code^code^T^10
+"DATA",998.1,6,10,9,40,3,0)
+_id^@id^T^10
+"DATA",998.1,6,10,10,0)
+Organization^^4
+"DATA",998.1,6,10,10,30,0)
+^998.12I^4^4
+"DATA",998.1,6,10,10,30,1,0)
+name^.01^F^20
+"DATA",998.1,6,10,10,30,2,0)
+active^^S^10
+"DATA",998.1,6,10,10,30,2,10)
+true
+"DATA",998.1,6,10,10,30,3,0)
+address^@ien^O^40
+"DATA",998.1,6,10,10,30,3,10)
+*/Organization_Address
+"DATA",998.1,6,10,10,30,4,0)
+id^@id^R^1
+"DATA",998.1,6,10,11,0)
+Organization_Address^1^4
+"DATA",998.1,6,10,11,30,0)
+^998.12I^6^6
+"DATA",998.1,6,10,11,30,1,0)
+use^^S^10
+"DATA",998.1,6,10,11,30,1,10)
+work
+"DATA",998.1,6,10,11,30,2,0)
+line^1.01^F^20
+"DATA",998.1,6,10,11,30,3,0)
+line^1.02^F^20.1
+"DATA",998.1,6,10,11,30,4,0)
+city^1.03^F^50
+"DATA",998.1,6,10,11,30,5,0)
+state^.02^F^60
+"DATA",998.1,6,10,11,30,6,0)
+postalCode^1.04^F^80
+"DATA",998.1,6,10,12,0)
+Organization_Reference^1^4
+"DATA",998.1,6,10,12,30,0)
+^998.12I^2^2
+"DATA",998.1,6,10,12,30,1,0)
+reference^^C^10
+"DATA",998.1,6,10,12,30,1,10)
+D PUT(PN,"Organization/"_IEN)
+"DATA",998.1,6,10,12,30,2,0)
+display^.01^F^20
+"DATA",998.1,6,10,13,0)
+Patient^^2
+"DATA",998.1,6,10,13,30,0)
+^998.12I^19^18
+"DATA",998.1,6,10,13,30,1,0)
+name^.01^C^10
+"DATA",998.1,6,10,13,30,1,10)
+D NAME(VL("I"))
+"DATA",998.1,6,10,13,30,2,0)
+gender^.02^C^20
+"DATA",998.1,6,10,13,30,2,10)
+D PUT(PN,$$LOW^XLFSTR(VL("E")))
+"DATA",998.1,6,10,13,30,3,0)
+birthDate^.03^D^30
+"DATA",998.1,6,10,13,30,4,0)
+deceasedDateTime^.351^D^50
+"DATA",998.1,6,10,13,30,5,0)
+identifier!MR,Medical Record #,http://hl7.org/fhir/v2/0203^^C^60
+"DATA",998.1,6,10,13,30,5,10)
+D IDENT("@identifiers/patients",$$HRN^RGSERPAT(IEN),PN(0))
+"DATA",998.1,6,10,13,30,6,0)
+managingOrganization^^C^80
+"DATA",998.1,6,10,13,30,6,10)
+D:$G(DUZ(2)) GET^RGSERGET(.RGSER,"*/Organization_Reference",DUZ(2),PN)
+"DATA",998.1,6,10,13,30,7,0)
+photo^^C^80
+"DATA",998.1,6,10,13,30,7,10)
+Q:'$L($T(^MAGGTIG))  N X,Y D PHOTOS^MAGGTIG(.X,IEN) F Y=0:0 S Y=$O(X(Y)) Q:'Y  S X=$P(X(Y),U,3) I $E(X,1,4)="http" D NEWTAG(PN),PUT("contentType","image/"_$P(X,".",$L(X,"."))),PUT("url",X),ENDTAG(PN)
+"DATA",998.1,6,10,13,30,8,0)
+telecom!phone:home^.131^C^100
+"DATA",998.1,6,10,13,30,8,10)
+D TELECOM
+"DATA",998.1,6,10,13,30,9,0)
+telecom!phone:mobile^.134^C^110
+"DATA",998.1,6,10,13,30,9,10)
+D TELECOM
+"DATA",998.1,6,10,13,30,10,0)
+telecom!phone:work^.132^C^120
+"DATA",998.1,6,10,13,30,10,10)
+D TELECOM
+"DATA",998.1,6,10,13,30,11,0)
+address^@ien^O^130
+"DATA",998.1,6,10,13,30,11,10)
+*/Patient_Address_Home
+"DATA",998.1,6,10,13,30,13,0)
+extension^2^M^21
+"DATA",998.1,6,10,13,30,13,10)
+*/Patient_Race
+"DATA",998.1,6,10,13,30,14,0)
+identifier!SS,Social Security #,http://hl7.org/fhir/v2/0203^.09^C^60
+"DATA",998.1,6,10,13,30,14,10)
+D IDENT("http://hl7.org/fhir/sid/us-ssn",VL("E"),PN(0))
+"DATA",998.1,6,10,13,30,15,0)
+id^@id^R^1
+"DATA",998.1,6,10,13,30,16,0)
+text^^T^1.1
+"DATA",998.1,6,10,13,30,16,10)
+TEXT
+"DATA",998.1,6,10,13,30,17,0)
+maritalStatus^.05^C^140
+"DATA",998.1,6,10,13,30,17,10)
+I VL N X S X=$$MARITAL^RGSERPAT(VL("E")) D CODING(PN,"http://hl7.org/fhir/v3/MaritalStatus",$P(X,U),$P(X,U,2))
+"DATA",998.1,6,10,13,30,18,0)
+identifier!ICN,Integration Control #^991.01^C^60
+"DATA",998.1,6,10,13,30,18,10)
+D IDENT("http://va.gov/sid/icn",$$ICN^RGSERPAT(IEN),PN(0))
+"DATA",998.1,6,10,13,30,19,0)
+extension!congregation^.08^O^22
+"DATA",998.1,6,10,13,30,19,10)
+*/Patient_Congregation
+"DATA",998.1,6,10,13,40,0)
+^998.13I^6^6
+"DATA",998.1,6,10,13,40,1,0)
+_id^@ien^T^10
+"DATA",998.1,6,10,13,40,2,0)
+family^.01^S^20
+"DATA",998.1,6,10,13,40,2,10)
+D OPRNAME(VL("E"),1) K PVAL
+"DATA",998.1,6,10,13,40,2,20)
+S X="$$NAMEITER^RGSERPAT"
+"DATA",998.1,6,10,13,40,3,0)
+given^.01^S^30
+"DATA",998.1,6,10,13,40,3,10)
+D OPRNAME(VL("E"),2) K PVAL
+"DATA",998.1,6,10,13,40,4,0)
+gender^.02^T^40
+"DATA",998.1,6,10,13,40,5,0)
+birthdate^.03^D^15
+"DATA",998.1,6,10,13,40,6,0)
+identifier^.09^T^5
+"DATA",998.1,6,10,13,40,6,10)
+S MATCH=PVAL=$$HRN^RGSERPAT(IEN),PVAL=$TR(PVAL,"-") S:MATCH TP=""
+"DATA",998.1,6,10,13,50,0)
+^998.15^1^1
+"DATA",998.1,6,10,13,50,1,0)
+TEXT
+"DATA",998.1,6,10,13,50,1,1,0)
+^998.151^6^6^3150701^^
+"DATA",998.1,6,10,13,50,1,1,1,0)
+<text>
+"DATA",998.1,6,10,13,50,1,1,2,0)
+<status value="generated"/>
+"DATA",998.1,6,10,13,50,1,1,3,0)
+<div xmlns="http://www.w3.org/1999/xhtml">
+"DATA",998.1,6,10,13,50,1,1,4,0)
+NAME: |.01|
+"DATA",998.1,6,10,13,50,1,1,5,0)
+</div>
+"DATA",998.1,6,10,13,50,1,1,6,0)
+</text>
+"DATA",998.1,6,10,14,0)
+Patient/#/Condition
+"DATA",998.1,6,10,14,10)
+D COMPRT($NA(^AUPNPROB("AC")))
+"DATA",998.1,6,10,15,0)
+Patient/#/DocumentReference
+"DATA",998.1,6,10,15,10)
+D COMPRT($NA(^TIU(8925,"C")))
+"DATA",998.1,6,10,16,0)
+Patient/#/Encounter
+"DATA",998.1,6,10,16,10)
+D COMPRT($NA(^AUPNVSIT("C")))
+"DATA",998.1,6,10,17,0)
+Patient/#/Observation
+"DATA",998.1,6,10,17,10)
+D COMPRT($$OBS^RGSEROBS($P(PATH,"/",3)),1)
+"DATA",998.1,6,10,18,0)
+Patient_Address_Home^1^2
+"DATA",998.1,6,10,18,30,0)
+^998.12I^10^10
+"DATA",998.1,6,10,18,30,1,0)
+use^^S^10
+"DATA",998.1,6,10,18,30,1,10)
+home
+"DATA",998.1,6,10,18,30,2,0)
+line!1^.111^F^20
+"DATA",998.1,6,10,18,30,3,0)
+line!2^.112^F^20.1
+"DATA",998.1,6,10,18,30,4,0)
+line!3^.113^F^20.2
+"DATA",998.1,6,10,18,30,5,0)
+city^.114^F^50
+"DATA",998.1,6,10,18,30,6,0)
+state^.115^F^60
+"DATA",998.1,6,10,18,30,7,0)
+state!province^.1171^F^60.1
+"DATA",998.1,6,10,18,30,8,0)
+postalCode^.116^F^80
+"DATA",998.1,6,10,18,30,9,0)
+country^.1173^F^90
+"DATA",998.1,6,10,18,30,10,0)
+district^.117,.115^C^55
+"DATA",998.1,6,10,18,30,10,10)
+D:VL PUT(PN,$$COUNTY^RGSERPAT(VL(2,"I"),VL("I")))
+"DATA",998.1,6,10,19,0)
+Patient_Race^1^2.02
+"DATA",998.1,6,10,19,30,0)
+^998.12I^2^2
+"DATA",998.1,6,10,19,30,1,0)
+valueCodeableConcept^.01^C^10
+"DATA",998.1,6,10,19,30,1,10)
+D:VL NEWTAG(PN),PUT("text",VL("E")),ENDTAG(PN)
+"DATA",998.1,6,10,19,30,2,0)
+attr:url^^N^1
+"DATA",998.1,6,10,19,30,2,10)
+http://hl7.org/fhir/StructureDefinition/us-core-race
+"DATA",998.1,6,10,20,0)
+Practitioner^^200
+"DATA",998.1,6,10,20,30,0)
+^998.12I^9^9
+"DATA",998.1,6,10,20,30,1,0)
+name^.01^C^10
+"DATA",998.1,6,10,20,30,1,10)
+D NAME(VL("I"))
+"DATA",998.1,6,10,20,30,2,0)
+telecom!phone:home^.131^C^20
+"DATA",998.1,6,10,20,30,2,10)
+D TELECOM
+"DATA",998.1,6,10,20,30,3,0)
+telecom!phone:work^.132^C^30
+"DATA",998.1,6,10,20,30,3,10)
+D TELECOM
+"DATA",998.1,6,10,20,30,4,0)
+telecom!fax:work^.136^C^40
+"DATA",998.1,6,10,20,30,4,10)
+D TELECOM
+"DATA",998.1,6,10,20,30,5,0)
+identifier!DEA,Drug Enforcement Administration #,http://hl7.org/fhir/v2/0203^53.2^C^50
+"DATA",998.1,6,10,20,30,5,10)
+D IDENT("http://hl7.org/fhir/sid/us-dea",VL("E"),PN(0),"official")
+"DATA",998.1,6,10,20,30,6,0)
+gender^4^C^40
+"DATA",998.1,6,10,20,30,6,10)
+D PUT(PN,$$LOW^XLFSTR(VL("E")))
+"DATA",998.1,6,10,20,30,7,0)
+identifier!SS,Social Security #,http://hl7.org/fhir/v2/0203^9^C^50
+"DATA",998.1,6,10,20,30,7,10)
+D IDENT("http://hl7.org/fhir/sid/us-ssn",VL("E"),PN(0))
+"DATA",998.1,6,10,20,30,8,0)
+identifier!NPI,National Provider Identifier,http://hl7.org/fhir/v2/0203^41.99^C^50
+"DATA",998.1,6,10,20,30,8,10)
+D IDENT("http://hl7.org/fhir/sid/us-npi",VL("E"),PN(0))
+"DATA",998.1,6,10,20,30,9,0)
+id^@id^R^1
+"DATA",998.1,6,10,20,40,0)
+^998.13I^3^3
+"DATA",998.1,6,10,20,40,1,0)
+family^.01^S^20
+"DATA",998.1,6,10,20,40,1,10)
+D OPRNAME(VL("E"),1) K PVAL
+"DATA",998.1,6,10,20,40,1,20)
+S X="$$NAMEITER^RGSERPER"
+"DATA",998.1,6,10,20,40,2,0)
+given^.01^S^30
+"DATA",998.1,6,10,20,40,2,10)
+D OPRNAME(VL("E"),2) K PVAL
+"DATA",998.1,6,10,20,40,3,0)
+_id^@ien^T^40
+"DATA",998.1,6,10,21,0)
+Person^^200
+"DATA",998.1,6,10,21,30,0)
+^998.12I^14^14
+"DATA",998.1,6,10,21,30,1,0)
+name^.01^C^20
+"DATA",998.1,6,10,21,30,1,10)
+D NAME(VL("I"))
+"DATA",998.1,6,10,21,30,2,0)
+birthDate^5^D^50
+"DATA",998.1,6,10,21,30,3,0)
+managingOrganization^^C^80
+"DATA",998.1,6,10,21,30,3,10)
+D REF2(PN,"Organization",DUZ(2),$P(^DIC(4,DUZ(2),0),U))
+"DATA",998.1,6,10,21,30,4,0)
+telecom!phone:work^.132^C^30
+"DATA",998.1,6,10,21,30,4,10)
+D TELECOM
+"DATA",998.1,6,10,21,30,5,0)
+telecom!phone:home^.131^C^30.1
+"DATA",998.1,6,10,21,30,5,10)
+D TELECOM
+"DATA",998.1,6,10,21,30,6,0)
+telecom!fax:work^.136^C^30.2
+"DATA",998.1,6,10,21,30,6,10)
+D TELECOM
+"DATA",998.1,6,10,21,30,7,0)
+id^@id^R^1
+"DATA",998.1,6,10,21,30,8,0)
+nickname^13^C^10.1
+"DATA",998.1,6,10,21,30,8,10)
+D:VL NAME(","_VL("I"),PN)
+"DATA",998.1,6,10,21,30,9,0)
+address^@ien^O^60
+"DATA",998.1,6,10,21,30,9,10)
+*/Person_Address
+"DATA",998.1,6,10,21,30,10,0)
+active^7^C^90
+"DATA",998.1,6,10,21,30,10,10)
+D PUTBL^RGSEXML(PN,'VL("I"))
+"DATA",998.1,6,10,21,30,11,0)
+identifier^^N^10
+"DATA",998.1,6,10,21,30,12,0)
+gender^4^C^40
+"DATA",998.1,6,10,21,30,12,10)
+D PUT(PN,$$LOW^XLFSTR(VL("E")))
+"DATA",998.1,6,10,21,30,13,0)
+photo^^N^70
+"DATA",998.1,6,10,21,30,14,0)
+link^^N^90
+"DATA",998.1,6,10,21,40,0)
+^998.13I^1^1
+"DATA",998.1,6,10,21,40,1,0)
+_id^@ien^T^10
+"DATA",998.1,6,10,22,0)
+ValueSet^^998.11
+"DATA",998.1,6,10,22,20)
+S IENS=IENS_RGSER("SER")_","
+"DATA",998.1,6,10,22,30,0)
+^998.12I^6^6
+"DATA",998.1,6,10,22,30,1,0)
+codeSystem^.01^C^100
+"DATA",998.1,6,10,22,30,1,10)
+D NEWTAG(PN),PUT("system",$$SYSTEM^RGSER("@"_VL("E"))),GET^RGSERGET(.RGSER,"*/"_VL("E"),,"concept"),ENDTAG(PN)
+"DATA",998.1,6,10,22,30,2,0)
+identifier^.01^C^10
+"DATA",998.1,6,10,22,30,2,10)
+D IDENT($$SYSTEM^RGSER("@vs/"_$P(VL("E"),"_",2,99)),"encounter-type")
+"DATA",998.1,6,10,22,30,3,0)
+name^.01^C^20
+"DATA",998.1,6,10,22,30,3,10)
+D PUT(PN,$P(VL("E"),"_",2,99))
+"DATA",998.1,6,10,22,30,4,0)
+description^99^F^30
+"DATA",998.1,6,10,22,30,5,0)
+status^^S^40
+"DATA",998.1,6,10,22,30,5,10)
+active
+"DATA",998.1,6,10,22,30,6,0)
+id^@ienx^R^1
+"DATA",998.1,6,10,22,40,0)
+^998.13I^3^3
+"DATA",998.1,6,10,22,40,1,0)
+_id^@ien^T^1
+"DATA",998.1,6,10,22,40,2,0)
+name^.01^S^10
+"DATA",998.1,6,10,22,40,2,10)
+S PVAL=$S(PVAL("OPR")="s":"VALUESET_",1:"ValueSet_")_PVAL
+"DATA",998.1,6,10,22,40,3,0)
+@selector^.01^T^1
+"DATA",998.1,6,10,22,40,3,10)
+S MATCH="ValueSet_"=$E(VL("E"),1,9)
+"DATA",998.1,6,10,22,40,3,20)
+S X="$$ITERVS^RGSEFHIR"
+"DATA",998.1,6,10,23,0)
+ValueSet_DocumentType^1^8925.1
+"DATA",998.1,6,10,23,30,0)
+^998.12I^2^2
+"DATA",998.1,6,10,23,30,1,0)
+code^@ien^R^20
+"DATA",998.1,6,10,23,30,2,0)
+display^.01^F^30
+"DATA",998.1,6,10,23,99)
+List of document categories by which documents may be classified.
+"DATA",998.1,6,10,24,0)
+ValueSet_EncounterType^1
+"DATA",998.1,6,10,24,10)
+K XSER D GETTYPES^RGSERENC
+"DATA",998.1,6,10,24,20)
+D RETRIEVE^RGSERENC(IEN)
+"DATA",998.1,6,10,24,30,0)
+^998.12I^3^3
+"DATA",998.1,6,10,24,30,1,0)
+display^2^R^20
+"DATA",998.1,6,10,24,30,2,0)
+code^1^R^30
+"DATA",998.1,6,10,24,30,3,0)
+definition^3^R^40
+"DATA",998.1,6,10,24,99)
+List of recognized encounter types (service codes).
+"DATA",998.1,6,10,25,0)
+Medication^^50
+"DATA",998.1,6,10,25,30,0)
+^998.12I^8^8
+"DATA",998.1,6,10,25,30,1,0)
+name^.01^F^10
+"DATA",998.1,6,10,25,30,2,0)
+code!start^^C^20
+"DATA",998.1,6,10,25,30,2,10)
+D NEWTAG(PN)
+"DATA",998.1,6,10,25,30,3,0)
+code!end^^C^20.9
+"DATA",998.1,6,10,25,30,3,10)
+D ENDTAG(PN)
+"DATA",998.1,6,10,25,30,4,0)
+coding!ndc^31^C^20.1
+"DATA",998.1,6,10,25,30,4,10)
+D:VL CODING(,"http://www.fda.gov/ndc",VL("E"))
+"DATA",998.1,6,10,25,30,5,0)
+product!start^^C^30
+"DATA",998.1,6,10,25,30,5,10)
+D NEWTAG(PN)
+"DATA",998.1,6,10,25,30,6,0)
+product!end^^C^30.9
+"DATA",998.1,6,10,25,30,6,10)
+D ENDTAG(PN)
+"DATA",998.1,6,10,25,30,7,0)
+form^14.5^C^30.1
+"DATA",998.1,6,10,25,30,7,10)
+D:VL CODING(PN,"dispense_unit",,VL("E"))
+"DATA",998.1,6,10,25,30,8,0)
+id^@id^R^1
+"DATA",998.1,6,10,25,40,0)
+^998.13I^3^3
+"DATA",998.1,6,10,25,40,1,0)
+code^31^T^10
+"DATA",998.1,6,10,25,40,2,0)
+name^.01^S^20
+"DATA",998.1,6,10,25,40,3,0)
+_id^@ien^T^30
+"DATA",998.1,6,10,26,0)
+MedicationPrescription^^52
+"DATA",998.1,6,10,26,30,0)
+^998.12I^9^9
+"DATA",998.1,6,10,26,30,1,0)
+patient^2^C^40
+"DATA",998.1,6,10,26,30,1,10)
+D REF(PN,"Patient",.VL)
+"DATA",998.1,6,10,26,30,2,0)
+prescriber^4^C^50
+"DATA",998.1,6,10,26,30,2,10)
+D REF(PN,"Practitioner",.VL)
+"DATA",998.1,6,10,26,30,3,0)
+medication^6^C^80
+"DATA",998.1,6,10,26,30,3,10)
+D REF(PN,"Medication",.VL)
+"DATA",998.1,6,10,26,30,4,0)
+dateWritten^1^D^20
+"DATA",998.1,6,10,26,30,5,0)
+dosageInstruction!start^^C^90
+"DATA",998.1,6,10,26,30,5,10)
+D NEWTAG(PN)
+"DATA",998.1,6,10,26,30,6,0)
+dosageInstruction!end^^C^90.9
+"DATA",998.1,6,10,26,30,6,10)
+D ENDTAG(PN)
+"DATA",998.1,6,10,26,30,7,0)
+@text^10.2^M^90.001
+"DATA",998.1,6,10,26,30,7,10)
+*/MedicationPrescription_Sig
+"DATA",998.1,6,10,26,30,8,0)
+@dosing^113^M^90.002
+"DATA",998.1,6,10,26,30,8,10)
+*/MedicationPrescription_Dosing
+"DATA",998.1,6,10,26,30,9,0)
+id^@id^R^1
+"DATA",998.1,6,10,26,40,0)
+^998.13I^3^3
+"DATA",998.1,6,10,26,40,1,0)
+patient^2^R^10
+"DATA",998.1,6,10,26,40,1,20)
+S X=$$COHORT(PN,$NA(^PS(55,"*","P","A")),1)
+"DATA",998.1,6,10,26,40,2,0)
+_id^@ien^T^20
+"DATA",998.1,6,10,26,40,3,0)
+patient:Patient^2^R^10
+"DATA",998.1,6,10,26,40,3,20)
+S X=$$COHORT(PN,$NA(^PS(55,"*","P","A")),1)
+"DATA",998.1,6,10,27,0)
+MedicationPrescription_Sig^1^52.04
+"DATA",998.1,6,10,27,30,0)
+^998.12I^1^1
+"DATA",998.1,6,10,27,30,1,0)
+text^.01^F^10
+"DATA",998.1,6,10,28,0)
+MedicationPrescription_Dosing^1^52.0113
+"DATA",998.1,6,10,28,30,0)
+^998.12I^1^1
+"DATA",998.1,6,10,28,30,1,0)
+route^6^C^10
+"DATA",998.1,6,10,28,30,1,10)
+D:VL CODING(PN,"@medication_route",VL("E"))
+"DATA",998.1,6,10,29,0)
+Patient/#/MedicationPrescription
+"DATA",998.1,6,10,29,10)
+D COMPRT($$COHORT2($P(PATH,"/",3),$NA(^PS(55,"*","P","A")),1),1)
+"DATA",998.1,6,10,30,0)
+AdverseReaction^^120.8
+"DATA",998.1,6,10,30,30,0)
+^998.12I^10^8
+"DATA",998.1,6,10,30,30,1,0)
+identifier^^N^10
+"DATA",998.1,6,10,30,30,2,0)
+date^4^D^20
+"DATA",998.1,6,10,30,30,3,0)
+subject^.01^C^30
+"DATA",998.1,6,10,30,30,3,10)
+D REF(PN,"Patient",.VL)
+"DATA",998.1,6,10,30,30,4,0)
+didNotOccurFlag^^S^40
+"DATA",998.1,6,10,30,30,4,10)
+false
+"DATA",998.1,6,10,30,30,5,0)
+recorder^5^C^50
+"DATA",998.1,6,10,30,30,5,10)
+D REF(PN,"Practitioner",.VL)
+"DATA",998.1,6,10,30,30,6,0)
+symptom^10^M^60
+"DATA",998.1,6,10,30,30,6,10)
+*/AdverseReaction_Symptom
+"DATA",998.1,6,10,30,30,9,0)
+exposure^1,.02^C^70.2
+"DATA",998.1,6,10,30,30,9,10)
+S:'VL VL("E")=VL(2,"E") S VL("I")=$$VP2ID(VL("I")) D NEWTAG(PN),REF("substance","Substance",.VL),ENDTAG(PN)
+"DATA",998.1,6,10,30,30,10,0)
+id^@id^R^1
+"DATA",998.1,6,10,30,40,0)
+^998.13I^3^3
+"DATA",998.1,6,10,30,40,1,0)
+subject^.01^R^10
+"DATA",998.1,6,10,30,40,1,20)
+S X=$$COHORT(PN,$NA(^GMR(120.8,"B")))
+"DATA",998.1,6,10,30,40,2,0)
+subject:Patient^.01^R^10
+"DATA",998.1,6,10,30,40,2,20)
+S X=$$COHORT(PN,$NA(^GMR(120.8,"B")))
+"DATA",998.1,6,10,30,40,3,0)
+_id^@ien^T^20
+"DATA",998.1,6,10,31,0)
+AdverseReaction_Symptom^1^120.81
+"DATA",998.1,6,10,31,30,0)
+^998.12I^2^2
+"DATA",998.1,6,10,31,30,1,0)
+code^.01^C^10
+"DATA",998.1,6,10,31,30,1,10)
+D CODING(PN,"#120.83",VL("I"),VL("E"))
+"DATA",998.1,6,10,31,30,2,0)
+severity^^N^20
+"DATA",998.1,6,10,32,0)
+AdverseReaction_Ingredient^1^120.802
+"DATA",998.1,6,10,32,30,0)
+^998.12I^4^4
+"DATA",998.1,6,10,32,30,1,0)
+date^^D^10
+"DATA",998.1,6,10,32,30,2,0)
+type^^S^20
+"DATA",998.1,6,10,32,30,2,10)
+drugadmin
+"DATA",998.1,6,10,32,30,3,0)
+causalityExpectation^^N^30
+"DATA",998.1,6,10,32,30,4,0)
+substance^.01^C^40
+"DATA",998.1,6,10,32,30,4,10)
+D REF(PN,"Substance",.VL,"50.416:")
+"DATA",998.1,6,10,33,0)
+AdverseReaction_Class^1^120.803
+"DATA",998.1,6,10,33,30,0)
+^998.12I^4^4
+"DATA",998.1,6,10,33,30,1,0)
+date^^D^10
+"DATA",998.1,6,10,33,30,2,0)
+type^^S^20
+"DATA",998.1,6,10,33,30,2,10)
+drugadmin
+"DATA",998.1,6,10,33,30,3,0)
+causalityExpectation^^N^30
+"DATA",998.1,6,10,33,30,4,0)
+substance^.01^C^40
+"DATA",998.1,6,10,33,30,4,10)
+D REF(PN,"Substance",.VL,"50.605:")
+"DATA",998.1,6,10,34,0)
+Substance
+"DATA",998.1,6,10,34,10)
+D COMPID^RGSERGET
+"DATA",998.1,6,10,34,30,0)
+^998.12I^1^1
+"DATA",998.1,6,10,34,30,1,0)
+id^@id^R^1
+"DATA",998.1,6,10,35,0)
+Patient/#/AdverseReaction
+"DATA",998.1,6,10,35,10)
+D COMPRT($NA(^GMR(120.8,"B")))
+"DATA",998.1,6,10,36,0)
+Substance_50^1^50
+"DATA",998.1,6,10,36,30,0)
+^998.12I^4^4
+"DATA",998.1,6,10,36,30,1,0)
+type^.01^C^10
+"DATA",998.1,6,10,36,30,1,10)
+D CODING(PN,"#"_FILE,IEN,VL("E"))
+"DATA",998.1,6,10,36,30,2,0)
+description^^W^20
+"DATA",998.1,6,10,36,30,3,0)
+instance^^N^30
+"DATA",998.1,6,10,36,30,4,0)
+ingredient^^N^40
+"DATA",998.1,6,10,37,0)
+Substance_50.416^1^50.416
+"DATA",998.1,6,10,37,30,0)
+^998.12I^4^4
+"DATA",998.1,6,10,37,30,1,0)
+type^.01^C^10
+"DATA",998.1,6,10,37,30,1,10)
+D CODING(PN,"#"_FILE,IEN,VL("E"))
+"DATA",998.1,6,10,37,30,2,0)
+description^^W^20
+"DATA",998.1,6,10,37,30,3,0)
+instance^^N^30
+"DATA",998.1,6,10,37,30,4,0)
+ingredient^^N^40
+"DATA",998.1,6,10,38,0)
+Substance_50.6^1^50.6
+"DATA",998.1,6,10,38,30,0)
+^998.12I^4^4
+"DATA",998.1,6,10,38,30,1,0)
+type^.01^C^10
+"DATA",998.1,6,10,38,30,1,10)
+D CODING(PN,"#"_FILE,IEN,VL("E"))
+"DATA",998.1,6,10,38,30,2,0)
+description^^W^20
+"DATA",998.1,6,10,38,30,3,0)
+instance^^N^30
+"DATA",998.1,6,10,38,30,4,0)
+ingredient^^N^40
+"DATA",998.1,6,10,39,0)
+Substance_50.605^1^50.605
+"DATA",998.1,6,10,39,30,0)
+^998.12I^4^4
+"DATA",998.1,6,10,39,30,1,0)
+type^.01^C^10
+"DATA",998.1,6,10,39,30,1,10)
+D CODING(PN,"#"_FILE,IEN,VL("E"))
+"DATA",998.1,6,10,39,30,2,0)
+description^^W^20
+"DATA",998.1,6,10,39,30,3,0)
+instance^^N^30
+"DATA",998.1,6,10,39,30,4,0)
+ingredient^^N^40
+"DATA",998.1,6,10,40,0)
+Substance_120.82^1^120.82
+"DATA",998.1,6,10,40,30,0)
+^998.12I^4^4
+"DATA",998.1,6,10,40,30,1,0)
+type^.01^C^10
+"DATA",998.1,6,10,40,30,1,10)
+D CODING(PN,"#"_FILE,IEN,VL("E"))
+"DATA",998.1,6,10,40,30,2,0)
+description^^W^20
+"DATA",998.1,6,10,40,30,3,0)
+instance^^N^30
+"DATA",998.1,6,10,40,30,4,0)
+ingredient^^N^40
+"DATA",998.1,6,10,41,0)
+Immunization^^9000010.11
+"DATA",998.1,6,10,41,30,0)
+^998.12I^19^19
+"DATA",998.1,6,10,41,30,1,0)
+identifier^^N^10
+"DATA",998.1,6,10,41,30,2,0)
+date^1201,.03~.01^C^20
+"DATA",998.1,6,10,41,30,2,10)
+D PUTDT(PN,$S(VL:VL("I"),1:VL(2,"I")))
+"DATA",998.1,6,10,41,30,3,0)
+vaccineType^.01^C^30
+"DATA",998.1,6,10,41,30,3,10)
+D CODING(PN,"#9999999.14",VL("I"),VL("E"))
+"DATA",998.1,6,10,41,30,4,0)
+patient^.02^C^40
+"DATA",998.1,6,10,41,30,4,10)
+D REF(PN,"Patient",.VL)
+"DATA",998.1,6,10,41,30,5,0)
+wasNotGiven^^S^50
+"DATA",998.1,6,10,41,30,5,10)
+false
+"DATA",998.1,6,10,41,30,6,0)
+reported^^S^60
+"DATA",998.1,6,10,41,30,6,10)
+false
+"DATA",998.1,6,10,41,30,7,0)
+performer^1204^C^70
+"DATA",998.1,6,10,41,30,7,10)
+D:VL REF(PN,"Practitioner",.VL)
+"DATA",998.1,6,10,41,30,8,0)
+requester^1202^C^80
+"DATA",998.1,6,10,41,30,8,10)
+D:VL REF(PN,"Practitioner",.VL)
+"DATA",998.1,6,10,41,30,9,0)
+manufacturer^^N^90
+"DATA",998.1,6,10,41,30,10,0)
+location^.03~.22^C^100
+"DATA",998.1,6,10,41,30,10,10)
+D REF(PN,"Location",.VL)
+"DATA",998.1,6,10,41,30,11,0)
+lotNumber^^N^110
+"DATA",998.1,6,10,41,30,12,0)
+expirationDate^^D^120
+"DATA",998.1,6,10,41,30,13,0)
+site^^N^130
+"DATA",998.1,6,10,41,30,14,0)
+route^^N^140
+"DATA",998.1,6,10,41,30,15,0)
+doseQuantity^^N^150
+"DATA",998.1,6,10,41,30,16,0)
+explanation^^N^160
+"DATA",998.1,6,10,41,30,17,0)
+reaction^^N^170
+"DATA",998.1,6,10,41,30,18,0)
+vaccinationProtocol^^N^180
+"DATA",998.1,6,10,41,30,19,0)
+id^@id^R^1
+"DATA",998.1,6,10,41,40,0)
+^998.13I^3^3
+"DATA",998.1,6,10,41,40,1,0)
+patient^.02^R^10
+"DATA",998.1,6,10,41,40,1,20)
+S X=$$COHORT(PN,$NA(^AUPNVIMM("C")))
+"DATA",998.1,6,10,41,40,2,0)
+patient:Patient^.02^R^10
+"DATA",998.1,6,10,41,40,2,20)
+S X=$$COHORT(PN,$NA(^AUPNVIMM("C")))
+"DATA",998.1,6,10,41,40,3,0)
+_id^@ien^T^30
+"DATA",998.1,6,10,42,0)
+Patient/#/Immunization
+"DATA",998.1,6,10,42,10)
+D COMPRT($NA(^AUPNVIMM("C")))
+"DATA",998.1,6,10,43,0)
+Flag^^26.13
+"DATA",998.1,6,10,43,30,0)
+^998.12I^7^7
+"DATA",998.1,6,10,43,30,1,0)
+identifier^^N^10
+"DATA",998.1,6,10,43,30,2,0)
+category^.02^C^20
+"DATA",998.1,6,10,43,30,2,10)
+D CODING(PN,"#26.13",$$VP2ID(VL("I")),VL("E"))
+"DATA",998.1,6,10,43,30,3,0)
+status^.03^C^30
+"DATA",998.1,6,10,43,30,3,10)
+D PUT(PN,$$LOW^XLFSTR(VL("E")))
+"DATA",998.1,6,10,43,30,4,0)
+patient^.01^C^40
+"DATA",998.1,6,10,43,30,4,10)
+D REF(PN,"Patient",.VL)
+"DATA",998.1,6,10,43,30,5,0)
+author^^N^50
+"DATA",998.1,6,10,43,30,6,0)
+code:text^1^W^60
+"DATA",998.1,6,10,43,30,7,0)
+id^@id^R^1
+"DATA",998.1,6,10,43,40,0)
+^998.13I^3^3
+"DATA",998.1,6,10,43,40,1,0)
+_id^@ien^T^10
+"DATA",998.1,6,10,43,40,2,0)
+patient^.01^R^20
+"DATA",998.1,6,10,43,40,2,20)
+S X=$NA(^DGPF(26.13,"B",RGNETREQ("PARAMS",PN,1,1)))
+"DATA",998.1,6,10,43,40,3,0)
+patient:Patient^.01^R^20
+"DATA",998.1,6,10,43,40,3,20)
+S X=$NA(^DGPF(26.13,"B",RGNETREQ("PARAMS",PN,1,1)))
+"DATA",998.1,6,10,44,0)
+Patient/#/Flag
+"DATA",998.1,6,10,44,10)
+D COMPRT($NA(^DGPF(26.13,"B")))
+"DATA",998.1,6,10,45,0)
+Communication^^8992.1
+"DATA",998.1,6,10,45,20)
+S:ID'=+ID IENS=$O(^XTV(8992.1,"B",ID,0))_","
+"DATA",998.1,6,10,45,30,0)
+^998.12I^15^15
+"DATA",998.1,6,10,45,30,1,0)
+identifier^^N^10
+"DATA",998.1,6,10,45,30,2,0)
+category^^N^20
+"DATA",998.1,6,10,45,30,3,0)
+status^^N^70
+"DATA",998.1,6,10,45,30,4,0)
+subject^.04^C^120
+"DATA",998.1,6,10,45,30,4,10)
+D REF(PN,"Patient",.VL)
+"DATA",998.1,6,10,45,30,5,0)
+sender^.05^C^30
+"DATA",998.1,6,10,45,30,5,10)
+D REF(PN,"Practitioner",.VL)
+"DATA",998.1,6,10,45,30,6,0)
+payload:contentString^1.01^F^50
+"DATA",998.1,6,10,45,30,7,0)
+@id^.01^N^1
+"DATA",998.1,6,10,45,30,8,0)
+recipient^20^M^40
+"DATA",998.1,6,10,45,30,8,10)
+*/Communication_Recipient
+"DATA",998.1,6,10,45,30,9,0)
+medium^^N^60
+"DATA",998.1,6,10,45,30,10,0)
+encounter^^N^80
+"DATA",998.1,6,10,45,30,11,0)
+sent^^D^90
+"DATA",998.1,6,10,45,30,12,0)
+received^^D^100
+"DATA",998.1,6,10,45,30,13,0)
+reason^^N^110
+"DATA",998.1,6,10,45,30,14,0)
+payload:contentString^4^W^50.1
+"DATA",998.1,6,10,45,30,14,10)
+%0D%0A
+"DATA",998.1,6,10,45,30,15,0)
+id^@id^R^1
+"DATA",998.1,6,10,45,40,0)
+^998.13I^4^4
+"DATA",998.1,6,10,45,40,1,0)
+_id^.01^T^10
+"DATA",998.1,6,10,45,40,1,20)
+S X=$NA(^XTV(8992.1,"B",RGNETREQ("PARAMS",PN,1,1)))
+"DATA",998.1,6,10,45,40,2,0)
+subject^.04^R^20
+"DATA",998.1,6,10,45,40,2,20)
+S X=$NA(^XTV(8992.1,"C",RGNETREQ("PARAMS",PN,1,1)))
+"DATA",998.1,6,10,45,40,3,0)
+subject:Patient^.04^R^20
+"DATA",998.1,6,10,45,40,3,20)
+S X=$NA(^XTV(8992.1,"C",RGNETREQ("PARAMS",PN,1,1)))
+"DATA",998.1,6,10,45,40,4,0)
+@selector^^S^100
+"DATA",998.1,6,10,45,40,4,20)
+S X=$NA(^XTV(8992.1,"R",DUZ))
+"DATA",998.1,6,10,46,0)
+Patient/#/Communication
+"DATA",998.1,6,10,46,10)
+D COMPRT($NA(^XTV(8992.1,"C")))
+"DATA",998.1,6,10,47,0)
+Communication_Recipient^1^8992.11
+"DATA",998.1,6,10,47,30,0)
+^998.12I^1^1
+"DATA",998.1,6,10,47,30,1,0)
+contentReference^.01^C^10
+"DATA",998.1,6,10,47,30,1,10)
+D REF(PN,"Practitioner",.VL)
+"DATA",998.1,6,10,48,0)
+metadata
+"DATA",998.1,6,10,48,10)
+D TEMPLATE^RGSERGET("CONFORMANCE")
+"DATA",998.1,6,10,48,50,0)
+^998.15^3^3
+"DATA",998.1,6,10,48,50,1,0)
+CONFORMANCE
+"DATA",998.1,6,10,48,50,1,1,0)
+^^28^28^3170321.135125
+"DATA",998.1,6,10,48,50,1,1,1,0)
+<Conformance>
+"DATA",998.1,6,10,48,50,1,1,2,0)
+  <text>
+"DATA",998.1,6,10,48,50,1,1,3,0)
+    <status value="generated"/>
+"DATA",998.1,6,10,48,50,1,1,4,0)
+  </text>
+"DATA",998.1,6,10,48,50,1,1,5,0)
+  <publisher value="|@$P($$SITE^VASITE,U,2)|"/>
+"DATA",998.1,6,10,48,50,1,1,6,0)
+  <date value="|@$$FMTDATE^RGSER|"/>
+"DATA",998.1,6,10,48,50,1,1,7,0)
+  <software>
+"DATA",998.1,6,10,48,50,1,1,8,0)
+    <name value="VistA Serialization Framework"/>
+"DATA",998.1,6,10,48,50,1,1,9,0)
+    <version value="|@$$VERSION^XPDUTL("RGSE")|"/>
+"DATA",998.1,6,10,48,50,1,1,10,0)
+  </software>
+"DATA",998.1,6,10,48,50,1,1,11,0)
+  <implementation>
+"DATA",998.1,6,10,48,50,1,1,12,0)
+    <description value="VistA (|@RGSER("SERNM")|)"/>
+"DATA",998.1,6,10,48,50,1,1,13,0)
+  </implementation>
+"DATA",998.1,6,10,48,50,1,1,14,0)
+  <fhirVersion value="|@RGSER("VER")|"/>
+"DATA",998.1,6,10,48,50,1,1,15,0)
+  <acceptUnknown value="extensions"/>
+"DATA",998.1,6,10,48,50,1,1,16,0)
+  <format value="application/xml+fhir"/> 
+"DATA",998.1,6,10,48,50,1,1,17,0)
+  <rest>
+"DATA",998.1,6,10,48,50,1,1,18,0)
+    <mode value="server"/>
+"DATA",998.1,6,10,48,50,1,1,19,0)
+    <security>
+"DATA",998.1,6,10,48,50,1,1,20,0)
+      <extension url="http://fhir-registry.smarthealthit.org/Profile/oauth-uris#authorize">
+"DATA",998.1,6,10,48,50,1,1,21,0)
+        <valueUri value="|@$$HOSTURL^RGNETWWW("oauth2/authorize")|" />
+"DATA",998.1,6,10,48,50,1,1,22,0)
+      </extension>
+"DATA",998.1,6,10,48,50,1,1,23,0)
+      <extension url="http://fhir-registry.smarthealthit.org/Profile/oauth-uris#token">
+"DATA",998.1,6,10,48,50,1,1,24,0)
+        <valueUri value="|@$$HOSTURL^RGNETWWW("oauth2/token")|" />
+"DATA",998.1,6,10,48,50,1,1,25,0)
+      </extension>
+"DATA",998.1,6,10,48,50,1,1,26,0)
+    </security>
+"DATA",998.1,6,10,48,50,1,1,27,0)
+|#$$RESCONF^RGSEFHIR|  </rest>
+"DATA",998.1,6,10,48,50,1,1,28,0)
+</Conformance> 
+"DATA",998.1,6,10,48,50,2,0)
+CONFORMANCE_RESOURCE
+"DATA",998.1,6,10,48,50,2,1,0)
+^998.151^6^6^3170321^^
+"DATA",998.1,6,10,48,50,2,1,1,0)
+    <resource>
+"DATA",998.1,6,10,48,50,2,1,2,0)
+      <type value="|@RESNAME|"/>
+"DATA",998.1,6,10,48,50,2,1,3,0)
+      <interaction>
+"DATA",998.1,6,10,48,50,2,1,4,0)
+       <code value="read"/>
+"DATA",998.1,6,10,48,50,2,1,5,0)
+      </interaction>
+"DATA",998.1,6,10,48,50,2,1,6,0)
+|#$$SRPCONF^RGSEFHIR|    </resource> 
+"DATA",998.1,6,10,48,50,3,0)
+CONFORMANCE_PARAMETER
+"DATA",998.1,6,10,48,50,3,1,0)
+^998.151^4^4^3170321^^^^
+"DATA",998.1,6,10,48,50,3,1,1,0)
+        <searchParam>
+"DATA",998.1,6,10,48,50,3,1,2,0)
+          <name value="|@SRPNAME|"/>
+"DATA",998.1,6,10,48,50,3,1,3,0)
+          <type value="|@SRPTYPE|"/>
+"DATA",998.1,6,10,48,50,3,1,4,0)
+        </searchParam>
+"DATA",998.1,6,10,49,0)
+Person_Address^1^200
+"DATA",998.1,6,10,49,30,0)
+^998.12I^8^7
+"DATA",998.1,6,10,49,30,1,0)
+use^^S^10
+"DATA",998.1,6,10,49,30,1,10)
+home
+"DATA",998.1,6,10,49,30,2,0)
+line!1^.111^F^20
+"DATA",998.1,6,10,49,30,3,0)
+line!2^.112^F^20.1
+"DATA",998.1,6,10,49,30,4,0)
+line!3^.113^F^20.2
+"DATA",998.1,6,10,49,30,5,0)
+city^.114^F^50
+"DATA",998.1,6,10,49,30,6,0)
+state^.115^F^60
+"DATA",998.1,6,10,49,30,8,0)
+postalCode^.116^F^80
+"DATA",998.1,6,10,50,0)
+OperationOutcome^^.84
+"DATA",998.1,6,10,50,21)
+K:$G(VALS(FILE,IENS,"1.2~1","E"))'="RGSE" VALS
+"DATA",998.1,6,10,50,30,0)
+^998.12I^8^8
+"DATA",998.1,6,10,50,30,1,0)
+issue!start^^C^10
+"DATA",998.1,6,10,50,30,1,10)
+D NEWTAG(PN)
+"DATA",998.1,6,10,50,30,2,0)
+issue!end^^C^10.9
+"DATA",998.1,6,10,50,30,2,10)
+D ENDTAG(PN)
+"DATA",998.1,6,10,50,30,3,0)
+severity^1^C^10.1
+"DATA",998.1,6,10,50,30,3,10)
+D PUT(PN,$S($G(VL("I"))=1:"error",1:"information"))
+"DATA",998.1,6,10,50,30,4,0)
+code^1.3^C^10.2
+"DATA",998.1,6,10,50,30,4,10)
+D CODING(PN,"http://hl7.org/fhir/issue-type",$P(VL("E"),":",2),$P(VL("E"),":",3))
+"DATA",998.1,6,10,50,30,5,0)
+details^2^W^10.3
+"DATA",998.1,6,10,50,30,5,10)
+%20
+"DATA",998.1,6,10,50,30,6,0)
+location^^N^10.4
+"DATA",998.1,6,10,50,30,7,0)
+text^4^T^5
+"DATA",998.1,6,10,50,30,7,10)
+TEXT
+"DATA",998.1,6,10,50,30,8,0)
+@package^1.2~1^N^1
+"DATA",998.1,6,10,50,40,0)
+^998.13I^2^2
+"DATA",998.1,6,10,50,40,1,0)
+_id^@ien^T^10
+"DATA",998.1,6,10,50,40,2,0)
+@selector^^T^1
+"DATA",998.1,6,10,50,40,2,20)
+S X=$NA(^DI(.84,"C",$$LKPKG^XPDUTL("RGSE")))
+"DATA",998.1,6,10,50,50,0)
+^998.15^1^1
+"DATA",998.1,6,10,50,50,1,0)
+TEXT
+"DATA",998.1,6,10,50,50,1,1,0)
+^^10^10^3150420.111019
+"DATA",998.1,6,10,50,50,1,1,1,0)
+<text>
+"DATA",998.1,6,10,50,50,1,1,2,0)
+<status value="generated"/>
+"DATA",998.1,6,10,50,50,1,1,3,0)
+<div xmlns="http://www.w3.org/1999/xhtml">
+"DATA",998.1,6,10,50,50,1,1,4,0)
+<table style='margin:5px;border:1px solid black'>
+"DATA",998.1,6,10,50,50,1,1,5,0)
+<tr style='background:lightgray'><td><h1>Operation Outcome (|\@ien|)</h1></td></tr>
+"DATA",998.1,6,10,50,50,1,1,6,0)
+<tr><td style='border-bottom:1px solid black'><pre>|2,W|</pre></td></tr>
+"DATA",998.1,6,10,50,50,1,1,7,0)
+<tr><td><pre>|4,W|</pre></td></tr>
+"DATA",998.1,6,10,50,50,1,1,8,0)
+</table>
+"DATA",998.1,6,10,50,50,1,1,9,0)
+</div>
+"DATA",998.1,6,10,50,50,1,1,10,0)
+</text> 
+"DATA",998.1,6,10,51,0)
+Order^^100
+"DATA",998.1,6,10,51,30,0)
+^998.12I^9^9
+"DATA",998.1,6,10,51,30,1,0)
+identifier^^N^10
+"DATA",998.1,6,10,51,30,2,0)
+date^4^D^20
+"DATA",998.1,6,10,51,30,3,0)
+subject^.02^C^30
+"DATA",998.1,6,10,51,30,3,10)
+D:VL("I")["DPT" REF2(PN,"Patient",+VL("I"),VL("E"))
+"DATA",998.1,6,10,51,30,4,0)
+source^1^C^40
+"DATA",998.1,6,10,51,30,4,10)
+D REF(PN,"Practitioner",.VL)
+"DATA",998.1,6,10,51,30,5,0)
+target^^N^50
+"DATA",998.1,6,10,51,30,6,0)
+reason^^N^60
+"DATA",998.1,6,10,51,30,7,0)
+authority^^N^70
+"DATA",998.1,6,10,51,30,8,0)
+when^^N^80
+"DATA",998.1,6,10,51,30,9,0)
+detail:reference^@ien^C^90
+"DATA",998.1,6,10,51,30,9,10)
+D PUT(PN,"DiagnosticOrder/"_VL("I"))
+"DATA",998.1,6,10,52,0)
+DiagnosticRequest
+"DATA",998.1,6,10,53,0)
+FamilyMemberHistory^^9000014.1
+"DATA",998.1,6,10,53,30,0)
+^998.12I^13^11
+"DATA",998.1,6,10,53,30,1,0)
+identifier^^N^10
+"DATA",998.1,6,10,53,30,2,0)
+patient^.02^C^20
+"DATA",998.1,6,10,53,30,2,10)
+D REF(PN,"Patient",.VL)
+"DATA",998.1,6,10,53,30,3,0)
+date!captured^.09^D^30
+"DATA",998.1,6,10,53,30,4,0)
+name^.03^F^25
+"DATA",998.1,6,10,53,30,7,0)
+born^^N^60
+"DATA",998.1,6,10,53,30,8,0)
+ageRange^.05^N^70
+"DATA",998.1,6,10,53,30,9,0)
+deceasedBoolean^.04^C^80
+"DATA",998.1,6,10,53,30,9,10)
+D:VL("I")="D" PUTBL^RGSEXML(PN,1)
+"DATA",998.1,6,10,53,30,10,0)
+note^^N^90
+"DATA",998.1,6,10,53,30,11,0)
+condition^@ien^C^100
+"DATA",998.1,6,10,53,30,11,10)
+D GET^RGSERGET(.RGSER,"*/FamilyMemberHistory_Condition",$NA(^AUPNFH("AE",VL("I"))),PN)
+"DATA",998.1,6,10,53,30,12,0)
+relationship^.01~2104,.01~.01^C^40
+"DATA",998.1,6,10,53,30,12,10)
+D:VL CODING(PN,"http://hl7.org/fhir/familial-relationship",VL("I"),VL(2,"I"))
+"DATA",998.1,6,10,53,30,13,0)
+date!updated^.11^D^30.1
+"DATA",998.1,6,10,53,40,0)
+^998.13I^2^2
+"DATA",998.1,6,10,53,40,1,0)
+_id^@ien^T^30
+"DATA",998.1,6,10,53,40,2,0)
+patient^.02^R^10
+"DATA",998.1,6,10,53,40,2,20)
+S X=$$COHORT(PN,$NA(^AUPNFHR("AA")),1)
+"DATA",998.1,6,10,54,0)
+FamilyMemberHistory_Condition^1^9000014
+"DATA",998.1,6,10,54,30,0)
+^998.12I^7^7
+"DATA",998.1,6,10,54,30,1,0)
+type!start^^C^10
+"DATA",998.1,6,10,54,30,1,10)
+D NEWTAG(PN)
+"DATA",998.1,6,10,54,30,2,0)
+outcome^^N^20
+"DATA",998.1,6,10,54,30,3,0)
+onsetAge^.05^C^30
+"DATA",998.1,6,10,54,30,3,10)
+D:VL NEWTAG(PN),PUT("value",VL("I")),PUT("units","a"),PUT("system","http://unitsofmeasure.org"),ENDTAG(PN)
+"DATA",998.1,6,10,54,30,4,0)
+note^.04^C^40
+"DATA",998.1,6,10,54,30,4,10)
+D:VL PUT(PN,$TR(VL("E"),"|"))
+"DATA",998.1,6,10,54,30,5,0)
+type!icd9^.01,.01~3^C^10.2
+"DATA",998.1,6,10,54,30,5,10)
+D CODING(,"http://hl7.org/fhir/sid/icd-9",VL("E"),VL(2,"E"))
+"DATA",998.1,6,10,54,30,6,0)
+type!sct^.13,.14^C^10.1
+"DATA",998.1,6,10,54,30,6,10)
+I VL N DX S DX=$S($L($T(^BSTSAPIA)):$P($$DESC^BSTSAPIA($G(VL(2,"I"))),U,2),1:"") D CODING(,"http://snomed.info/sct",VL("I"),DX)
+"DATA",998.1,6,10,54,30,7,0)
+type!end^^C^10.9
+"DATA",998.1,6,10,54,30,7,10)
+D ENDTAG(PN)
+"DATA",998.1,6,10,55,0)
+Patient/#/FamilyMemberHistory
+"DATA",998.1,6,10,55,10)
+D COMPRT($NA(^AUPNFHR("AA")),,1)
+"DATA",998.1,6,10,56,0)
+Patient_Congregation^1^13
+"DATA",998.1,6,10,56,30,0)
+^998.12I^2^2
+"DATA",998.1,6,10,56,30,1,0)
+valueString^.01^F^10
+"DATA",998.1,6,10,56,30,2,0)
+attr:url^^N^1
+"DATA",998.1,6,10,56,30,2,10)
+http://hl7.org/fhir/StructureDefinition/patient-congregation
+"DATA",998.1,6,20,0)
+^998.14^5^5^3170321^^^^
+"DATA",998.1,6,20,1,0)
+Access-Control-Allow-Credentials: true
+"DATA",998.1,6,20,2,0)
+Access-Control-Allow-Headers: origin, authorization, accept, content-type, x-requested-with
+"DATA",998.1,6,20,3,0)
+Access-Control-Allow-Methods: GET, HEAD, POST, PUT, DELETE, TRACE, OPTIONS
+"DATA",998.1,6,20,4,0)
+Access-Control-Allow-Origin: *
+"DATA",998.1,6,20,5,0)
+Cache-Control: max-age=0
+"DATA",998.1,6,99,0)
+^^29^29^3170322.083728
+"DATA",998.1,6,99,1,0)
+This is the base URL for the STU3 XML FHIR endpoint. 
+"DATA",998.1,6,99,2,0)
+
+"DATA",998.1,6,99,3,0)
+<p><em>Note:</em> as STU3 is undergoing constant revision, resources returned 
+"DATA",998.1,6,99,4,0)
+from this endpoint may or may not comply with the most current STU3 
+"DATA",998.1,6,99,5,0)
+specification.
+"DATA",998.1,6,99,6,0)
+
+"DATA",998.1,6,99,7,0)
+<hr> 
+"DATA",998.1,6,99,8,0)
+
+"DATA",998.1,6,99,9,0)
+This service is supported by the <b>VistA Serialization Framework</b>, 
+"DATA",998.1,6,99,10,0)
+developed by Doug Martin of the <a href="http://www.regenstrief.org"
+"DATA",998.1,6,99,11,0)
+target="_blank">Regenstrief Institute.<a>
+"DATA",998.1,6,99,12,0)
+
+"DATA",998.1,6,99,13,0)
+<p>
+"DATA",998.1,6,99,14,0)
+
+"DATA",998.1,6,99,15,0)
+It is freely available as open source under the 
+"DATA",998.1,6,99,16,0)
+<a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License, Version 2.0</a>:
+"DATA",998.1,6,99,17,0)
+
+"DATA",998.1,6,99,18,0)
+<ul> 
+"DATA",998.1,6,99,19,0)
+<li> The FHIR conformance document is available
+"DATA",998.1,6,99,20,0)
+  <a href="/STU3/metadata" target="_blank">here</a>
+"DATA",998.1,6,99,21,0)
+</li>
+"DATA",998.1,6,99,22,0)
+<li> The complete source may be downloaded 
+"DATA",998.1,6,99,23,0)
+  <a href="https://github.com/mdgeek/VistA-Serialization-Framework" 
+"DATA",998.1,6,99,24,0)
+     target="_blank">here.</a>
+"DATA",998.1,6,99,25,0)
+</li>
+"DATA",998.1,6,99,26,0)
+<li> A working virtual machine may be built from this
+"DATA",998.1,6,99,27,0)
+  <a href="https://github.com/mdgeek/VistA-FHIR-CWF"
+"DATA",998.1,6,99,28,0)
+     target="_blank">source.</a>
+"DATA",998.1,6,99,29,0)
+</ul>
+"DATA",998.1,7,0)
+STU3^application/fhir+json,application/json,text/json,json^RGSEFHIJ^1.8.0
+"DATA",998.1,7,10,0)
+^998.11^51^51
+"DATA",998.1,7,10,1,0)
+Binary
+"DATA",998.1,7,10,1,10)
+D COMPID^RGSERGET
+"DATA",998.1,7,10,2,0)
+Binary_8925^1^8925
+"DATA",998.1,7,10,2,30,0)
+^998.12I^3^3
+"DATA",998.1,7,10,2,30,1,0)
+@content^^C^10
+"DATA",998.1,7,10,2,30,1,10)
+D TOBINARY^RGSERDOC(IEN,",""content"":""","""")
+"DATA",998.1,7,10,2,30,2,0)
+attr:contentType^^N^1
+"DATA",998.1,7,10,2,30,2,10)
+text/plain
+"DATA",998.1,7,10,2,30,3,0)
+id^@ienx^R^1
+"DATA",998.1,7,10,3,0)
+Condition^^9000011
+"DATA",998.1,7,10,3,30,0)
+^998.12I^9^9
+"DATA",998.1,7,10,3,30,1,0)
+patient^.02^C^10
+"DATA",998.1,7,10,3,30,1,10)
+D REF(PN,"Patient",.VL)
+"DATA",998.1,7,10,3,30,2,0)
+code!start^^C^20
+"DATA",998.1,7,10,3,30,2,10)
+D NEWOBJ(PN),NEWARY("coding")
+"DATA",998.1,7,10,3,30,3,0)
+coding^.01^O^20.1
+"DATA",998.1,7,10,3,30,3,10)
+*/ICD9
+"DATA",998.1,7,10,3,30,4,0)
+code!end^.05^C^20.2
+"DATA",998.1,7,10,3,30,4,10)
+D ENDARY("coding"),PUT("text",VL("E")),ENDOBJ(PN)
+"DATA",998.1,7,10,3,30,5,0)
+category^^N^30
+"DATA",998.1,7,10,3,30,6,0)
+clinicalStatus^.12^C^40
+"DATA",998.1,7,10,3,30,6,10)
+D PUT(PN,$$LOW^XLFSTR(VL("E")))
+"DATA",998.1,7,10,3,30,7,0)
+onsetDate^.13^D^50
+"DATA",998.1,7,10,3,30,8,0)
+abatementDate^1.07^D^60
+"DATA",998.1,7,10,3,30,9,0)
+id^@id^R^1
+"DATA",998.1,7,10,3,40,0)
+^998.13I^4^4
+"DATA",998.1,7,10,3,40,1,0)
+patient^.02^R^10
+"DATA",998.1,7,10,3,40,1,20)
+S X=$$COHORT(PN,$NA(^AUPNPROB("AC")))
+"DATA",998.1,7,10,3,40,2,0)
+onset^.13^D^20
+"DATA",998.1,7,10,3,40,3,0)
+patient:Patient^.02^R^10
+"DATA",998.1,7,10,3,40,3,20)
+S X=$$COHORT(PN,$NA(^AUPNPROB("AC")))
+"DATA",998.1,7,10,3,40,4,0)
+_id^@ien^T^30
+"DATA",998.1,7,10,4,0)
+DocumentReference^^8925
+"DATA",998.1,7,10,4,30,0)
+^998.12I^26^25
+"DATA",998.1,7,10,4,30,1,0)
+description^1701^F^140
+"DATA",998.1,7,10,4,30,2,0)
+type^.01^C^40
+"DATA",998.1,7,10,4,30,2,10)
+D CODING(PN,"#8925.1",VL("I"),VL("E"))
+"DATA",998.1,7,10,4,30,3,0)
+subject^.02^C^30
+"DATA",998.1,7,10,4,30,3,10)
+D REF(PN,"Patient",.VL)
+"DATA",998.1,7,10,4,30,4,0)
+author^1202^C^60
+"DATA",998.1,7,10,4,30,4,10)
+D REF(PN,"Practitioner",.VL)
+"DATA",998.1,7,10,4,30,5,0)
+contentType!content^^S^200.1
+"DATA",998.1,7,10,4,30,5,10)
+text/plain
+"DATA",998.1,7,10,4,30,6,0)
+created^1201^D^100
+"DATA",998.1,7,10,4,30,7,0)
+context^.07,.08^C^110
+"DATA",998.1,7,10,4,30,7,10)
+D NEWOBJ(PN),PERIOD(VL("I"),VL(2,"I")),ENDOBJ(PN)
+"DATA",998.1,7,10,4,30,9,0)
+url!content^@ien^C^200.4
+"DATA",998.1,7,10,4,30,9,10)
+D PUT(PN,$$HOSTURL^RGNETWWW("*/Binary/8925-"_VL("I")))
+"DATA",998.1,7,10,4,30,10,0)
+masterIdentifier^@ien^C^10
+"DATA",998.1,7,10,4,30,10,10)
+D NEWOBJ(PN),PUT("value",$$SYSUUID^RGNETWWW_"/Document/"_VL("I")),ENDOBJ(PN)
+"DATA",998.1,7,10,4,30,11,0)
+status^.05~.02^C^120
+"DATA",998.1,7,10,4,30,11,10)
+N X S X=VL("I") D PUT(PN,$S("rd"[X:"entered-in-error",1:"current"))
+"DATA",998.1,7,10,4,30,12,0)
+id^@id^R^1
+"DATA",998.1,7,10,4,30,13,0)
+identifier^^N^20
+"DATA",998.1,7,10,4,30,14,0)
+class^^N^50
+"DATA",998.1,7,10,4,30,15,0)
+custodian^^N^70
+"DATA",998.1,7,10,4,30,16,0)
+title!content^^N^200.7
+"DATA",998.1,7,10,4,30,17,0)
+authenticator^^N^90
+"DATA",998.1,7,10,4,30,18,0)
+indexed^1201^D^110
+"DATA",998.1,7,10,4,30,19,0)
+docStatus^^N^130
+"DATA",998.1,7,10,4,30,20,0)
+confidentiality^^N^150
+"DATA",998.1,7,10,4,30,21,0)
+language!content^^N^200.2
+"DATA",998.1,7,10,4,30,22,0)
+format^^N^180
+"DATA",998.1,7,10,4,30,23,0)
+size!content^^N^200.5
+"DATA",998.1,7,10,4,30,24,0)
+hash!content^^N^200.6
+"DATA",998.1,7,10,4,30,25,0)
+content!start^^C^200
+"DATA",998.1,7,10,4,30,25,10)
+D NEWARY(PN),NEWOBJ(PN)
+"DATA",998.1,7,10,4,30,26,0)
+content!end^^C^200.9
+"DATA",998.1,7,10,4,30,26,10)
+D ENDARY(PN)
+"DATA",998.1,7,10,4,40,0)
+^998.13I^6^6
+"DATA",998.1,7,10,4,40,1,0)
+subject:Patient^.02^R^10
+"DATA",998.1,7,10,4,40,1,20)
+S X=$$COHORT(PN,$NA(^TIU(8925,"C")))
+"DATA",998.1,7,10,4,40,2,0)
+period^1301^D^20
+"DATA",998.1,7,10,4,40,3,0)
+type^.01^T^30
+"DATA",998.1,7,10,4,40,4,0)
+author^1202^R^40
+"DATA",998.1,7,10,4,40,5,0)
+_id^@ien^T^50
+"DATA",998.1,7,10,4,40,6,0)
+indexed^1301^D^60
+"DATA",998.1,7,10,5,0)
+Encounter^^9000010
+"DATA",998.1,7,10,5,30,0)
+^998.12I^10^9
+"DATA",998.1,7,10,5,30,1,0)
+status^^C^10
+"DATA",998.1,7,10,5,30,1,10)
+D PUT(PN,$$GETSTAT^RGSERENC(IEN))
+"DATA",998.1,7,10,5,30,2,0)
+class^.07^C^20
+"DATA",998.1,7,10,5,30,2,10)
+N X S X=VL("I") D PUT(PN,$S(X="H":"inpatient",X="A":"ambulatory",1:"virtual"))
+"DATA",998.1,7,10,5,30,3,0)
+subject^.05^C^30
+"DATA",998.1,7,10,5,30,3,10)
+D REF(PN,"Patient",.VL)
+"DATA",998.1,7,10,5,30,4,0)
+period^.01,.18^C^70
+"DATA",998.1,7,10,5,30,4,10)
+D PERIOD(VL("I"),VL(2,"I"))
+"DATA",998.1,7,10,5,30,6,0)
+location^.01,.18,.22^C^60
+"DATA",998.1,7,10,5,30,6,10)
+D:VL(3) NEWARY(PN),NEWOBJ,REF2(,"Location",VL(3,"I"),VL(3,"E")),ENDARY(PN)
+"DATA",998.1,7,10,5,30,7,0)
+identifier!visitid^15001^C^40
+"DATA",998.1,7,10,5,30,7,10)
+D NEWARY(PN),IDENT("@identifiers/visits",VL("I"),PN(0),"official"),ENDARY(PN)
+"DATA",998.1,7,10,5,30,8,0)
+type^.07^C^80
+"DATA",998.1,7,10,5,30,8,10)
+D NEWARY(PN),CODING(PN,"@types/visits",VL("I"),VL("E")),ENDARY(PN)
+"DATA",998.1,7,10,5,30,9,0)
+participant^^C^90
+"DATA",998.1,7,10,5,30,9,10)
+D GET^RGSERGET(.RGSER,"*/Encounter_Participant",$NA(^AUPNVPRV("AD",IEN)),PN)
+"DATA",998.1,7,10,5,30,10,0)
+id^@id^R^1
+"DATA",998.1,7,10,5,40,0)
+^998.13I^5^4
+"DATA",998.1,7,10,5,40,1,0)
+patient^.05^R^10
+"DATA",998.1,7,10,5,40,1,20)
+S X=$$COHORT(PN,$NA(^AUPNVSIT("C")))
+"DATA",998.1,7,10,5,40,2,0)
+type^.07^T^20
+"DATA",998.1,7,10,5,40,3,0)
+date^.01,.18^D^20
+"DATA",998.1,7,10,5,40,5,0)
+_id^@ien^T^30
+"DATA",998.1,7,10,6,0)
+Encounter_Participant^1^9000010.06
+"DATA",998.1,7,10,6,30,0)
+^998.12I^3^3
+"DATA",998.1,7,10,6,30,1,0)
+type^.04^C^10
+"DATA",998.1,7,10,6,30,1,10)
+D:VL CODING(PN,"http://hl7.org/fhir/v3/ParticipationType",VL("I")_"PRF",VL("E"))
+"DATA",998.1,7,10,6,30,2,0)
+individual^.01^C^20
+"DATA",998.1,7,10,6,30,2,10)
+D REF(PN,"Practitioner",.VL)
+"DATA",998.1,7,10,6,30,3,0)
+type^.05^C^10.1
+"DATA",998.1,7,10,6,30,3,10)
+D:VL CODING(PN,"http://hl7.org/fhir/v3/ParticipationType",$S(VL("I")="A":"ATND",1:"PRF"),VL("E"))
+"DATA",998.1,7,10,7,0)
+ICD9^1^80
+"DATA",998.1,7,10,7,30,0)
+^998.12I^3^3
+"DATA",998.1,7,10,7,30,1,0)
+system^^C^20
+"DATA",998.1,7,10,7,30,1,10)
+D PUT("system","http://hl7.org/fhir/sid/icd-9")
+"DATA",998.1,7,10,7,30,2,0)
+code^.01^F^30
+"DATA",998.1,7,10,7,30,3,0)
+display^@ien^C^40
+"DATA",998.1,7,10,7,30,3,10)
+D PUT(PN,$$VSTD^ICDCODE(IEN))
+"DATA",998.1,7,10,8,0)
+Location^^44
+"DATA",998.1,7,10,8,30,0)
+^998.12I^10^10
+"DATA",998.1,7,10,8,30,1,0)
+name^.01^F^10
+"DATA",998.1,7,10,8,30,2,0)
+description^10^F^20
+"DATA",998.1,7,10,8,30,3,0)
+managingOrganization^3^C^30
+"DATA",998.1,7,10,8,30,3,10)
+D REF(PN,"Organization",.VL)
+"DATA",998.1,7,10,8,30,4,0)
+telecom!phone:work^99^C^40.1
+"DATA",998.1,7,10,8,30,4,10)
+D TELECOM
+"DATA",998.1,7,10,8,30,5,0)
+telecom!start^^C^40
+"DATA",998.1,7,10,8,30,5,10)
+D NEWARY(PN)
+"DATA",998.1,7,10,8,30,6,0)
+telecom!end^^C^40.9
+"DATA",998.1,7,10,8,30,6,10)
+D ENDARY(PN)
+"DATA",998.1,7,10,8,30,7,0)
+id^@id^R^1
+"DATA",998.1,7,10,8,30,8,0)
+mode^^S^50
+"DATA",998.1,7,10,8,30,8,10)
+instance
+"DATA",998.1,7,10,8,30,9,0)
+type^2,9^C^60
+"DATA",998.1,7,10,8,30,9,10)
+D CODING(PN,"http://hl7.org/fhir/v3/RoleCode",$$GETTYPE^RGSERLOC($G(VL("I")),$G(VL(2,"I"))))
+"DATA",998.1,7,10,8,30,10,0)
+status^2505,2506^C^70
+"DATA",998.1,7,10,8,30,10,10)
+D PUT(PN,$$GETSTAT^RGSERLOC($G(VL("I")),$G(VL(2,"I"))))
+"DATA",998.1,7,10,8,40,0)
+^998.13I^4^4
+"DATA",998.1,7,10,8,40,1,0)
+_id^@ien^T^10
+"DATA",998.1,7,10,8,40,2,0)
+type^2,9^T^10
+"DATA",998.1,7,10,8,40,2,10)
+S TP="",MATCH=PVAL=$$GETTYPE^RGSERLOC($G(VL("I")),$G(VL(2,"I")))
+"DATA",998.1,7,10,8,40,3,0)
+status^2505,2506^T^20
+"DATA",998.1,7,10,8,40,3,10)
+S TP="",MATCH=PVAL=$$GETSTAT^RGSERLOC($G(VL("I")),$G(VL(2,"I")))
+"DATA",998.1,7,10,8,40,4,0)
+name^.01^S^30
+"DATA",998.1,7,10,9,0)
+Observation
+"DATA",998.1,7,10,9,20)
+D RETRIEVE^RGSEROBS
+"DATA",998.1,7,10,9,30,0)
+^998.12I^21^18
+"DATA",998.1,7,10,9,30,1,0)
+issued^issued^D^60
+"DATA",998.1,7,10,9,30,2,0)
+status^status^F^70
+"DATA",998.1,7,10,9,30,3,0)
+reliability^reliability^F^80
+"DATA",998.1,7,10,9,30,4,0)
+subject^patient^C^120
+"DATA",998.1,7,10,9,30,4,10)
+D REF(PN,"Patient",.VL)
+"DATA",998.1,7,10,9,30,5,0)
+referenceRange^low,high^C^150
+"DATA",998.1,7,10,9,30,5,10)
+D RANGEJSN^RGSEROBS($G(VL("I")),$G(VL(2,"I")))
+"DATA",998.1,7,10,9,30,7,0)
+comments^comments^F^40
+"DATA",998.1,7,10,9,30,8,0)
+appliesDateTime^collected^D^50
+"DATA",998.1,7,10,9,30,9,0)
+identifier^id^C^110
+"DATA",998.1,7,10,9,30,9,10)
+D IDENT("@observation",VL("I"))
+"DATA",998.1,7,10,9,30,10,0)
+code^code,code_system^C^10
+"DATA",998.1,7,10,9,30,10,10)
+D:VL CODING(PN,VL(2,"E"),VL("I"),VL("E"))
+"DATA",998.1,7,10,9,30,11,0)
+value^value,units^C^20
+"DATA",998.1,7,10,9,30,11,10)
+D VALUEJSN^RGSEROBS($G(VL("I")),$G(VL(2,"I")))
+"DATA",998.1,7,10,9,30,12,0)
+interpretation^interpretation^C^30
+"DATA",998.1,7,10,9,30,12,10)
+D:VL NEWOBJ(PN),PUT("text",VL("E")),ENDOBJ(PN)
+"DATA",998.1,7,10,9,30,13,0)
+bodySite^^N^90
+"DATA",998.1,7,10,9,30,14,0)
+method^^N^100
+"DATA",998.1,7,10,9,30,15,0)
+specimen^^N^130
+"DATA",998.1,7,10,9,30,16,0)
+performer^^N^140
+"DATA",998.1,7,10,9,30,19,0)
+@id^id^N^1
+"DATA",998.1,7,10,9,30,20,0)
+related^related^C^160
+"DATA",998.1,7,10,9,30,20,10)
+D:VL RELJSN^RGSEROBS(VL("I"))
+"DATA",998.1,7,10,9,30,21,0)
+id^@id^R^1
+"DATA",998.1,7,10,9,40,0)
+^998.13I^3^3
+"DATA",998.1,7,10,9,40,1,0)
+subject:Patient^patient^R^10
+"DATA",998.1,7,10,9,40,1,20)
+S X=$$OBS^RGSEROBS(RGNETREQ("PARAMS","subject:Patient",1,1))
+"DATA",998.1,7,10,9,40,2,0)
+name^code^T^10
+"DATA",998.1,7,10,9,40,3,0)
+_id^@id^T^10
+"DATA",998.1,7,10,10,0)
+Organization^^4
+"DATA",998.1,7,10,10,30,0)
+^998.12I^6^6
+"DATA",998.1,7,10,10,30,1,0)
+name^.01^F^20
+"DATA",998.1,7,10,10,30,2,0)
+active^^S^10
+"DATA",998.1,7,10,10,30,2,10)
+true
+"DATA",998.1,7,10,10,30,3,0)
+address^@ien^O^40.1
+"DATA",998.1,7,10,10,30,3,10)
+*/Organization_Address
+"DATA",998.1,7,10,10,30,4,0)
+address!start^^C^40
+"DATA",998.1,7,10,10,30,4,10)
+D NEWARY(PN)
+"DATA",998.1,7,10,10,30,5,0)
+address!end^^C^40.9
+"DATA",998.1,7,10,10,30,5,10)
+D ENDARY(PN)
+"DATA",998.1,7,10,10,30,6,0)
+id^@id^R^1
+"DATA",998.1,7,10,11,0)
+Organization_Address^1^4
+"DATA",998.1,7,10,11,30,0)
+^998.12I^6^6
+"DATA",998.1,7,10,11,30,1,0)
+use^^S^10
+"DATA",998.1,7,10,11,30,1,10)
+work
+"DATA",998.1,7,10,11,30,2,0)
+line^1.01^F^20
+"DATA",998.1,7,10,11,30,3,0)
+line^1.02^F^20.1
+"DATA",998.1,7,10,11,30,4,0)
+city^1.03^F^50
+"DATA",998.1,7,10,11,30,5,0)
+state^.02^F^60
+"DATA",998.1,7,10,11,30,6,0)
+zip^1.04^F^80
+"DATA",998.1,7,10,12,0)
+Organization_Reference^1^4
+"DATA",998.1,7,10,12,30,0)
+^998.12I^2^2
+"DATA",998.1,7,10,12,30,1,0)
+reference^^C^10
+"DATA",998.1,7,10,12,30,1,10)
+D PUT(PN,"Organization/"_IEN)
+"DATA",998.1,7,10,12,30,2,0)
+display^.01^F^20
+"DATA",998.1,7,10,13,0)
+Patient^^2
+"DATA",998.1,7,10,13,30,0)
+^998.12I^29^28
+"DATA",998.1,7,10,13,30,1,0)
+name^.01^C^10.1
+"DATA",998.1,7,10,13,30,1,10)
+D NAME(VL("I"))
+"DATA",998.1,7,10,13,30,2,0)
+gender^.02^C^20
+"DATA",998.1,7,10,13,30,2,10)
+D PUT(PN,$$LOW^XLFSTR(VL("E")))
+"DATA",998.1,7,10,13,30,3,0)
+birthDate^.03^D^30
+"DATA",998.1,7,10,13,30,4,0)
+deceasedDateTime^.351^D^50
+"DATA",998.1,7,10,13,30,5,0)
+identifier!MR,Medical Record #,http://hl7.org/fhir/v2/0203^^C^60.1
+"DATA",998.1,7,10,13,30,5,10)
+D IDENT("@identifiers/patients",$$HRN^RGSERPAT(IEN),PN(0))
+"DATA",998.1,7,10,13,30,6,0)
+managingOrganization^^C^80
+"DATA",998.1,7,10,13,30,6,10)
+D:$G(DUZ(2)) GET^RGSERGET(.RGSER,"*/Organization_Reference",DUZ(2),PN)
+"DATA",998.1,7,10,13,30,7,0)
+photo^^C^80
+"DATA",998.1,7,10,13,30,7,10)
+Q:'$L($T(^MAGGTIG))  N X,Y D PHOTOS^MAGGTIG(.X,IEN) F Y=0:0 S Y=$O(X(Y)) Q:'Y  S X=$P(X(Y),U,3) I $E(X,1,4)="http" D NEWOBJ(PN),PUT("contentType","image/"_$P(X,".",$L(X,"."))),PUT("url",X),ENDOBJ(PN)
+"DATA",998.1,7,10,13,30,8,0)
+telecom!phone:home^.131^C^100.2
+"DATA",998.1,7,10,13,30,8,10)
+D TELECOM
+"DATA",998.1,7,10,13,30,9,0)
+telecom!phone:mobile^.134^C^100.3
+"DATA",998.1,7,10,13,30,9,10)
+D TELECOM
+"DATA",998.1,7,10,13,30,10,0)
+telecom!phone:work^.132^C^100.4
+"DATA",998.1,7,10,13,30,10,10)
+D TELECOM
+"DATA",998.1,7,10,13,30,11,0)
+address^@ien^O^130.1
+"DATA",998.1,7,10,13,30,11,10)
+*/Patient_Address_Home
+"DATA",998.1,7,10,13,30,13,0)
+extension!race^2^M^20.1
+"DATA",998.1,7,10,13,30,13,10)
+*/Patient_Race
+"DATA",998.1,7,10,13,30,14,0)
+identifier!SS,Social Security #,http://hl7.org/fhir/v2/020^.09^C^60.2
+"DATA",998.1,7,10,13,30,14,10)
+D IDENT("http://hl7.org/fhir/sid/us-ssn",VL("E"),PN(0))
+"DATA",998.1,7,10,13,30,15,0)
+text^^T^1.1
+"DATA",998.1,7,10,13,30,15,10)
+TEXT
+"DATA",998.1,7,10,13,30,16,0)
+identifier!start^^C^60
+"DATA",998.1,7,10,13,30,16,10)
+D NEWARY(PN)
+"DATA",998.1,7,10,13,30,17,0)
+identifier!end^^C^60.9
+"DATA",998.1,7,10,13,30,17,10)
+D ENDARY(PN)
+"DATA",998.1,7,10,13,30,18,0)
+telecom!start^^C^100
+"DATA",998.1,7,10,13,30,18,10)
+D NEWARY(PN)
+"DATA",998.1,7,10,13,30,19,0)
+telecom!end^^C^100.9
+"DATA",998.1,7,10,13,30,19,10)
+D ENDARY(PN)
+"DATA",998.1,7,10,13,30,20,0)
+address!start^^C^130
+"DATA",998.1,7,10,13,30,20,10)
+D NEWARY(PN)
+"DATA",998.1,7,10,13,30,21,0)
+address!end^^C^130.9
+"DATA",998.1,7,10,13,30,21,10)
+D ENDARY(PN)
+"DATA",998.1,7,10,13,30,22,0)
+id^@id^R^1
+"DATA",998.1,7,10,13,30,23,0)
+name!start^^C^10
+"DATA",998.1,7,10,13,30,23,10)
+D NEWARY(PN)
+"DATA",998.1,7,10,13,30,24,0)
+name!end^^C^10.9
+"DATA",998.1,7,10,13,30,24,10)
+D ENDARY(PN)
+"DATA",998.1,7,10,13,30,25,0)
+maritalStatus^.05^C^140
+"DATA",998.1,7,10,13,30,25,10)
+I VL N X S X=$$MARITAL^RGSERPAT(VL("E")) D CODING(PN,"http://hl7.org/fhir/v3/MaritalStatus",$P(X,U),$P(X,U,2))
+"DATA",998.1,7,10,13,30,26,0)
+identifier!ICN,Integration Control #^991.01^C^60
+"DATA",998.1,7,10,13,30,26,10)
+D IDENT("http://va.gov/sid/icn",$$ICN^RGSERPAT(IEN),PN(0))
+"DATA",998.1,7,10,13,30,27,0)
+extension!congregation^.08^O^20.2
+"DATA",998.1,7,10,13,30,27,10)
+*/Patient_Congregation
+"DATA",998.1,7,10,13,30,28,0)
+extension!start^^C^20
+"DATA",998.1,7,10,13,30,28,10)
+D NEWARY(PN)
+"DATA",998.1,7,10,13,30,29,0)
+extension!end^^C^20.999
+"DATA",998.1,7,10,13,30,29,10)
+D ENDARY(PN)
+"DATA",998.1,7,10,13,40,0)
+^998.13I^7^7
+"DATA",998.1,7,10,13,40,1,0)
+_id^@ien^T^10
+"DATA",998.1,7,10,13,40,2,0)
+family^.01^S^20
+"DATA",998.1,7,10,13,40,2,10)
+D OPRNAME(VL("E"),1) K PVAL
+"DATA",998.1,7,10,13,40,2,20)
+S X="$$NAMEITER^RGSERPAT"
+"DATA",998.1,7,10,13,40,3,0)
+given^.01^S^30
+"DATA",998.1,7,10,13,40,3,10)
+D OPRNAME(VL("E"),2) K PVAL
+"DATA",998.1,7,10,13,40,4,0)
+gender^.02^T^40
+"DATA",998.1,7,10,13,40,5,0)
+birthdate^.03^D^15
+"DATA",998.1,7,10,13,40,6,0)
+identifier^.09^T^5
+"DATA",998.1,7,10,13,40,6,10)
+S MATCH=PVAL=$$HRN^RGSERPAT(IEN),PVAL=$TR(PVAL,"-") S:MATCH TP=""
+"DATA",998.1,7,10,13,40,7,0)
+extension^^^20
+"DATA",998.1,7,10,13,50,0)
+^998.15^1^1
+"DATA",998.1,7,10,13,50,1,0)
+TEXT
+"DATA",998.1,7,10,13,50,1,1,0)
+^998.151^4^4^3150408^
+"DATA",998.1,7,10,13,50,1,1,1,0)
+,"text": {
+"DATA",998.1,7,10,13,50,1,1,2,0)
+"status": "generated",
+"DATA",998.1,7,10,13,50,1,1,3,0)
+"div": "NAME: |.01|"
+"DATA",998.1,7,10,13,50,1,1,4,0)
+}
+"DATA",998.1,7,10,14,0)
+Patient/#/Condition
+"DATA",998.1,7,10,14,10)
+D COMPRT($NA(^AUPNPROB("AC")))
+"DATA",998.1,7,10,15,0)
+Patient/#/DocumentReference
+"DATA",998.1,7,10,15,10)
+D COMPRT($NA(^TIU(8925,"C")))
+"DATA",998.1,7,10,16,0)
+Patient/#/Encounter
+"DATA",998.1,7,10,16,10)
+D COMPRT($NA(^AUPNVSIT("C")))
+"DATA",998.1,7,10,17,0)
+Patient/#/Observation
+"DATA",998.1,7,10,17,10)
+D COMPRT($$OBS^RGSEROBS($P(PATH,"/",3)),1)
+"DATA",998.1,7,10,18,0)
+Patient_Address_Home^1^2
+"DATA",998.1,7,10,18,30,0)
+^998.12I^12^12
+"DATA",998.1,7,10,18,30,1,0)
+use^^S^10
+"DATA",998.1,7,10,18,30,1,10)
+home
+"DATA",998.1,7,10,18,30,2,0)
+line!1^.111^F^20.1
+"DATA",998.1,7,10,18,30,3,0)
+line!2^.112^F^20.2
+"DATA",998.1,7,10,18,30,4,0)
+line!3^.113^F^20.3
+"DATA",998.1,7,10,18,30,5,0)
+city^.114^F^50
+"DATA",998.1,7,10,18,30,6,0)
+state^.115^F^60
+"DATA",998.1,7,10,18,30,7,0)
+state!province^.1171^F^60.1
+"DATA",998.1,7,10,18,30,8,0)
+zip^.116^F^80
+"DATA",998.1,7,10,18,30,9,0)
+country^.1173^F^90
+"DATA",998.1,7,10,18,30,10,0)
+line!start^c^C^20
+"DATA",998.1,7,10,18,30,10,10)
+D NEWARY(PN)
+"DATA",998.1,7,10,18,30,11,0)
+line!end^^C^20.9
+"DATA",998.1,7,10,18,30,11,10)
+D ENDARY(PN)
+"DATA",998.1,7,10,18,30,12,0)
+district^.117,.115^C^55
+"DATA",998.1,7,10,18,30,12,10)
+D:VL PUT(PN,$$COUNTY^RGSERPAT(VL(2,"I"),VL("I")))
+"DATA",998.1,7,10,19,0)
+Patient_Race^1^2.02
+"DATA",998.1,7,10,19,30,0)
+^998.12I^2^2
+"DATA",998.1,7,10,19,30,1,0)
+valueCodeableConcept^.01^C^10
+"DATA",998.1,7,10,19,30,1,10)
+D:VL NEWOBJ(PN),PUT("text",VL("E")),ENDOBJ(PN)
+"DATA",998.1,7,10,19,30,2,0)
+attr:url^^N^1
+"DATA",998.1,7,10,19,30,2,10)
+http://hl7.org/fhir/StructureDefinition/us-core-race
+"DATA",998.1,7,10,20,0)
+Practitioner^^200
+"DATA",998.1,7,10,20,30,0)
+^998.12I^15^15
+"DATA",998.1,7,10,20,30,1,0)
+name^.01^C^10.1
+"DATA",998.1,7,10,20,30,1,10)
+D NAME(VL("I"))
+"DATA",998.1,7,10,20,30,2,0)
+telecom!phone:home^.131^C^20.1
+"DATA",998.1,7,10,20,30,2,10)
+D TELECOM
+"DATA",998.1,7,10,20,30,3,0)
+telecom!phone:work^.132^C^20.2
+"DATA",998.1,7,10,20,30,3,10)
+D TELECOM
+"DATA",998.1,7,10,20,30,4,0)
+telecom!fax:work^.136^C^20.3
+"DATA",998.1,7,10,20,30,4,10)
+D TELECOM
+"DATA",998.1,7,10,20,30,5,0)
+identifier!DEA,Drug Enforcement Administration #,http://hl7.org/fhir/v2/0203^53.2^C^50.1
+"DATA",998.1,7,10,20,30,5,10)
+D IDENT("http://hl7.org/fhir/sid/us-dea",VL("E"),PN(0),"official")
+"DATA",998.1,7,10,20,30,6,0)
+gender^4^C^40
+"DATA",998.1,7,10,20,30,6,10)
+D PUT(PN,$$LOW^XLFSTR(VL("E")))
+"DATA",998.1,7,10,20,30,7,0)
+identifier!SS,Social Security #,http://hl7.org/fhir/v2/0203^9^C^50.3
+"DATA",998.1,7,10,20,30,7,10)
+D IDENT("http://hl7.org/fhir/sid/us-ssn",VL("E"),PN(0))
+"DATA",998.1,7,10,20,30,8,0)
+identifier!NPI,National Provider Identifier,http://hl7.org/fhir/v2/0203^41.99^C^50.2
+"DATA",998.1,7,10,20,30,8,10)
+D IDENT("http://hl7.org/fhir/sid/us-npi",VL("E"),PN(0))
+"DATA",998.1,7,10,20,30,9,0)
+identifier!start^^C^50
+"DATA",998.1,7,10,20,30,9,10)
+D NEWARY(PN)
+"DATA",998.1,7,10,20,30,10,0)
+identifier!end^^C^50.9
+"DATA",998.1,7,10,20,30,10,10)
+D ENDARY(PN)
+"DATA",998.1,7,10,20,30,11,0)
+telecom!start^^C^20
+"DATA",998.1,7,10,20,30,11,10)
+D NEWARY(PN)
+"DATA",998.1,7,10,20,30,12,0)
+telecom!end^^C^20.9
+"DATA",998.1,7,10,20,30,12,10)
+D ENDARY(PN)
+"DATA",998.1,7,10,20,30,13,0)
+id^@id^R^1
+"DATA",998.1,7,10,20,30,14,0)
+name!start^^C^10
+"DATA",998.1,7,10,20,30,14,10)
+D NEWARY(PN)
+"DATA",998.1,7,10,20,30,15,0)
+name!end^^C^10.9
+"DATA",998.1,7,10,20,30,15,10)
+D ENDARY(PN)
+"DATA",998.1,7,10,20,40,0)
+^998.13I^3^3
+"DATA",998.1,7,10,20,40,1,0)
+family^.01^S^20
+"DATA",998.1,7,10,20,40,1,10)
+D OPRNAME(VL("E"),1) K PVAL
+"DATA",998.1,7,10,20,40,1,20)
+S X="$$NAMEITER^RGSERPER"
+"DATA",998.1,7,10,20,40,2,0)
+given^.01^S^30
+"DATA",998.1,7,10,20,40,2,10)
+D OPRNAME(VL("E"),2) K PVAL
+"DATA",998.1,7,10,20,40,3,0)
+_id^@ien^T^40
+"DATA",998.1,7,10,21,0)
+User^^200
+"DATA",998.1,7,10,21,30,0)
+^998.12I^8^8
+"DATA",998.1,7,10,21,30,1,0)
+name^.01^C^10.1
+"DATA",998.1,7,10,21,30,1,10)
+D NAME(VL("I"))
+"DATA",998.1,7,10,21,30,2,0)
+birthDate^5^D^20
+"DATA",998.1,7,10,21,30,3,0)
+extension!organization^^T^30
+"DATA",998.1,7,10,21,30,3,10)
+ORGANIZATION
+"DATA",998.1,7,10,21,30,4,0)
+telecom!phone:work^.132^C^40
+"DATA",998.1,7,10,21,30,4,10)
+D TELECOM
+"DATA",998.1,7,10,21,30,5,0)
+telecom!phone:home^.131^C^50
+"DATA",998.1,7,10,21,30,5,10)
+D TELECOM
+"DATA",998.1,7,10,21,30,6,0)
+telecom!fax:work^.136^C^60
+"DATA",998.1,7,10,21,30,6,10)
+D TELECOM
+"DATA",998.1,7,10,21,30,7,0)
+name!start^^C^10
+"DATA",998.1,7,10,21,30,7,10)
+D NEWARY(PN)
+"DATA",998.1,7,10,21,30,8,0)
+name!end^^C^10.9
+"DATA",998.1,7,10,21,30,8,10)
+D ENDARY(PN)
+"DATA",998.1,7,10,21,40,0)
+^998.13I^1^1
+"DATA",998.1,7,10,21,40,1,0)
+_id^@ien^T^10
+"DATA",998.1,7,10,21,50,0)
+^998.15^1^1
+"DATA",998.1,7,10,21,50,1,0)
+ORGANIZATION
+"DATA",998.1,7,10,21,50,1,1,0)
+^^8^8^3150321.115125
+"DATA",998.1,7,10,21,50,1,1,1,0)
+,"extension": [
+"DATA",998.1,7,10,21,50,1,1,2,0)
+  { "url": "http://www.carewebframework.org/fhir/extension/user/organization",
+"DATA",998.1,7,10,21,50,1,1,3,0)
+    "valueResource": {
+"DATA",998.1,7,10,21,50,1,1,4,0)
+      "reference": "Organization/|@DUZ(2)|",
+"DATA",998.1,7,10,21,50,1,1,5,0)
+      "display": "|@$P(^DIC(4,DUZ(2),0),U)|"
+"DATA",998.1,7,10,21,50,1,1,6,0)
+    }
+"DATA",998.1,7,10,21,50,1,1,7,0)
+  }
+"DATA",998.1,7,10,21,50,1,1,8,0)
+]
+"DATA",998.1,7,10,22,0)
+ValueSet^^998.11
+"DATA",998.1,7,10,22,20)
+S IENS=IENS_RGSER("SER")_","
+"DATA",998.1,7,10,22,30,0)
+^998.12I^6^6
+"DATA",998.1,7,10,22,30,1,0)
+codeSystem^.01^C^100
+"DATA",998.1,7,10,22,30,1,10)
+D NEWOBJ(PN),PUT("system",$$SYSTEM^RGSER("@"_VL("E"))),GET^RGSERGET(.RGSER,"*/"_VL("E"),,"concept"),ENDOBJ(PN)
+"DATA",998.1,7,10,22,30,2,0)
+identifier^.01^C^10
+"DATA",998.1,7,10,22,30,2,10)
+D IDENT($$SYSTEM^RGSER("@vs/"_$P(VL("E"),"_",2,99)),"encounter-type")
+"DATA",998.1,7,10,22,30,3,0)
+name^.01^C^20
+"DATA",998.1,7,10,22,30,3,10)
+D PUT(PN,$P(VL("E"),"_",2,99))
+"DATA",998.1,7,10,22,30,4,0)
+description^99^F^30
+"DATA",998.1,7,10,22,30,5,0)
+status^^S^40
+"DATA",998.1,7,10,22,30,5,10)
+active
+"DATA",998.1,7,10,22,30,6,0)
+id^@id^R^1
+"DATA",998.1,7,10,22,40,0)
+^998.13I^3^3
+"DATA",998.1,7,10,22,40,1,0)
+_id^@ien^T^1
+"DATA",998.1,7,10,22,40,2,0)
+name^.01^S^10
+"DATA",998.1,7,10,22,40,2,10)
+S PVAL=$S(PVAL("OPR")="s":"VALUESET_",1:"ValueSet_")_PVAL
+"DATA",998.1,7,10,22,40,3,0)
+@selector^.01^T^1
+"DATA",998.1,7,10,22,40,3,10)
+S MATCH="ValueSet_"=$E(VL("E"),1,9)
+"DATA",998.1,7,10,22,40,3,20)
+S X="$$ITERVS^RGSEFHIR"
+"DATA",998.1,7,10,23,0)
+ValueSet_DocumentType^1^8925.1
+"DATA",998.1,7,10,23,30,0)
+^998.12I^2^2
+"DATA",998.1,7,10,23,30,1,0)
+code^@ien^R^20
+"DATA",998.1,7,10,23,30,2,0)
+display^.01^F^30
+"DATA",998.1,7,10,23,99)
+List of document categories by which documents may be classified.
+"DATA",998.1,7,10,24,0)
+ValueSet_EncounterType^1
+"DATA",998.1,7,10,24,10)
+K XSER D GETTYPES^RGSERENC
+"DATA",998.1,7,10,24,20)
+D RETRIEVE^RGSERENC(IEN)
+"DATA",998.1,7,10,24,30,0)
+^998.12I^3^3
+"DATA",998.1,7,10,24,30,1,0)
+display^2^R^20
+"DATA",998.1,7,10,24,30,2,0)
+code^1^R^30
+"DATA",998.1,7,10,24,30,3,0)
+definition^3^R^40
+"DATA",998.1,7,10,24,99)
+List of recognized encounter types (service codes).
+"DATA",998.1,7,10,25,0)
+Medication^^50
+"DATA",998.1,7,10,25,30,0)
+^998.12I^8^8
+"DATA",998.1,7,10,25,30,1,0)
+name^.01^F^10
+"DATA",998.1,7,10,25,30,2,0)
+code!start^^C^20
+"DATA",998.1,7,10,25,30,2,10)
+D NEWARY(PN)
+"DATA",998.1,7,10,25,30,3,0)
+code!end^^C^20.9
+"DATA",998.1,7,10,25,30,3,10)
+D ENDARY(PN)
+"DATA",998.1,7,10,25,30,4,0)
+coding!ndc^31^C^20.1
+"DATA",998.1,7,10,25,30,4,10)
+D:VL CODING(,"http://www.fda.gov/ndc",VL("E"))
+"DATA",998.1,7,10,25,30,5,0)
+product!start^^C^30
+"DATA",998.1,7,10,25,30,5,10)
+D NEWOBJ(PN)
+"DATA",998.1,7,10,25,30,6,0)
+product!end^^C^30.9
+"DATA",998.1,7,10,25,30,6,10)
+D ENDOBJ(PN)
+"DATA",998.1,7,10,25,30,7,0)
+form^14.5^C^30.1
+"DATA",998.1,7,10,25,30,7,10)
+D:VL CODING(PN,"dispense_unit",,VL("E"))
+"DATA",998.1,7,10,25,30,8,0)
+id^@id^R^1
+"DATA",998.1,7,10,25,40,0)
+^998.13I^3^3
+"DATA",998.1,7,10,25,40,1,0)
+code^31^T^10
+"DATA",998.1,7,10,25,40,2,0)
+name^.01^S^20
+"DATA",998.1,7,10,25,40,3,0)
+_id^@ien^T^30
+"DATA",998.1,7,10,26,0)
+MedicationPrescription^^52
+"DATA",998.1,7,10,26,30,0)
+^998.12I^9^9
+"DATA",998.1,7,10,26,30,1,0)
+patient^2^C^40
+"DATA",998.1,7,10,26,30,1,10)
+D REF(PN,"Patient",.VL)
+"DATA",998.1,7,10,26,30,2,0)
+prescriber^4^C^50
+"DATA",998.1,7,10,26,30,2,10)
+D REF(PN,"Practitioner",.VL)
+"DATA",998.1,7,10,26,30,3,0)
+medication^6^C^80
+"DATA",998.1,7,10,26,30,3,10)
+D REF(PN,"Medication",.VL)
+"DATA",998.1,7,10,26,30,4,0)
+dateWritten^1^D^20
+"DATA",998.1,7,10,26,30,5,0)
+dosageInstruction!start^^C^90
+"DATA",998.1,7,10,26,30,5,10)
+D NEWARY(PN)
+"DATA",998.1,7,10,26,30,6,0)
+dosageInstruction!end^^C^90.9
+"DATA",998.1,7,10,26,30,6,10)
+D ENDARY(PN)
+"DATA",998.1,7,10,26,30,7,0)
+@text^10.2^M^90.001
+"DATA",998.1,7,10,26,30,7,10)
+*/MedicationPrescription_Sig
+"DATA",998.1,7,10,26,30,8,0)
+@dosing^113^M^90.002
+"DATA",998.1,7,10,26,30,8,10)
+*/MedicationPrescription_Dosing
+"DATA",998.1,7,10,26,30,9,0)
+id^@id^R^1
+"DATA",998.1,7,10,26,40,0)
+^998.13I^3^3
+"DATA",998.1,7,10,26,40,1,0)
+patient^2^R^10
+"DATA",998.1,7,10,26,40,1,20)
+S X=$$COHORT(PN,$NA(^PS(55,"*","P","A")),1)
+"DATA",998.1,7,10,26,40,2,0)
+_id^@ien^T^20
+"DATA",998.1,7,10,26,40,3,0)
+patient:Patient^2^R^10
+"DATA",998.1,7,10,26,40,3,20)
+S X=$$COHORT(PN,$NA(^PS(55,"*","P","A")),1)
+"DATA",998.1,7,10,27,0)
+MedicationPrescription_Sig^1^52.04
+"DATA",998.1,7,10,27,30,0)
+^998.12I^1^1
+"DATA",998.1,7,10,27,30,1,0)
+text^.01^F^10
+"DATA",998.1,7,10,28,0)
+MedicationPrescription_Dosing^1^52.0113
+"DATA",998.1,7,10,28,30,0)
+^998.12I^1^1
+"DATA",998.1,7,10,28,30,1,0)
+route^6^C^10
+"DATA",998.1,7,10,28,30,1,10)
+D:VL CODING(PN,"@medication_route",VL("E"))
+"DATA",998.1,7,10,29,0)
+Patient/#/MedicationPrescription
+"DATA",998.1,7,10,29,10)
+D COMPRT($$COHORT2($P(PATH,"/",3),$NA(^PS(55,"*","P","A")),1),1)
+"DATA",998.1,7,10,30,0)
+AdverseReaction^^120.8
+"DATA",998.1,7,10,30,30,0)
+^998.12I^10^8
+"DATA",998.1,7,10,30,30,1,0)
+identifier^^N^10
+"DATA",998.1,7,10,30,30,2,0)
+date^4^D^20
+"DATA",998.1,7,10,30,30,3,0)
+subject^.01^C^30
+"DATA",998.1,7,10,30,30,3,10)
+D REF(PN,"Patient",.VL)
+"DATA",998.1,7,10,30,30,4,0)
+didNotOccurFlag^^S^40
+"DATA",998.1,7,10,30,30,4,10)
+false
+"DATA",998.1,7,10,30,30,5,0)
+recorder^5^C^50
+"DATA",998.1,7,10,30,30,5,10)
+D REF(PN,"Practitioner",.VL)
+"DATA",998.1,7,10,30,30,6,0)
+symptom^10^M^60
+"DATA",998.1,7,10,30,30,6,10)
+*/AdverseReaction_Symptom
+"DATA",998.1,7,10,30,30,9,0)
+exposure^1,.02^C^70.2
+"DATA",998.1,7,10,30,30,9,10)
+S:'VL VL("E")=VL(2,"E") S VL("I")=$$VP2ID(VL("I")) D NEWARY(PN),REF("substance","Substance",.VL),ENDARY(PN)
+"DATA",998.1,7,10,30,30,10,0)
+id^@id^R^1
+"DATA",998.1,7,10,30,40,0)
+^998.13I^3^3
+"DATA",998.1,7,10,30,40,1,0)
+subject^.01^R^10
+"DATA",998.1,7,10,30,40,1,20)
+S X=$$COHORT(PN,$NA(^GMR(120.8,"B")))
+"DATA",998.1,7,10,30,40,2,0)
+subject:Patient^.01^R^10
+"DATA",998.1,7,10,30,40,2,20)
+S X=$$COHORT(PN,$NA(^GMR(120.8,"B")))
+"DATA",998.1,7,10,30,40,3,0)
+_id^@ien^T^20
+"DATA",998.1,7,10,31,0)
+AdverseReaction_Symptom^1^120.81
+"DATA",998.1,7,10,31,30,0)
+^998.12I^2^2
+"DATA",998.1,7,10,31,30,1,0)
+code^.01^C^10
+"DATA",998.1,7,10,31,30,1,10)
+D CODING(PN,"#120.83",VL("I"),VL("E"))
+"DATA",998.1,7,10,31,30,2,0)
+severity^^N^20
+"DATA",998.1,7,10,32,0)
+AdverseReaction_Ingredient^1^120.802
+"DATA",998.1,7,10,32,30,0)
+^998.12I^4^4
+"DATA",998.1,7,10,32,30,1,0)
+date^^D^10
+"DATA",998.1,7,10,32,30,2,0)
+type^^S^20
+"DATA",998.1,7,10,32,30,2,10)
+drugadmin
+"DATA",998.1,7,10,32,30,3,0)
+causalityExpectation^^N^30
+"DATA",998.1,7,10,32,30,4,0)
+substance^.01^C^40
+"DATA",998.1,7,10,32,30,4,10)
+D REF(PN,"Substance",.VL,"50.416:")
+"DATA",998.1,7,10,33,0)
+AdverseReaction_Class^1^120.803
+"DATA",998.1,7,10,33,30,0)
+^998.12I^4^4
+"DATA",998.1,7,10,33,30,1,0)
+date^^D^10
+"DATA",998.1,7,10,33,30,2,0)
+type^^S^20
+"DATA",998.1,7,10,33,30,2,10)
+drugadmin
+"DATA",998.1,7,10,33,30,3,0)
+causalityExpectation^^N^30
+"DATA",998.1,7,10,33,30,4,0)
+substance^.01^C^40
+"DATA",998.1,7,10,33,30,4,10)
+D REF(PN,"Substance",.VL,"50.605:")
+"DATA",998.1,7,10,34,0)
+Substance
+"DATA",998.1,7,10,34,10)
+D COMPID^RGSERGET
+"DATA",998.1,7,10,34,30,0)
+^998.12I^1^1
+"DATA",998.1,7,10,34,30,1,0)
+id^@id^R^1
+"DATA",998.1,7,10,35,0)
+Patient/#/AdverseReaction
+"DATA",998.1,7,10,35,10)
+D COMPRT($NA(^GMR(120.8,"B")))
+"DATA",998.1,7,10,36,0)
+Substance_50^1^50
+"DATA",998.1,7,10,36,30,0)
+^998.12I^4^4
+"DATA",998.1,7,10,36,30,1,0)
+type^.01^C^10
+"DATA",998.1,7,10,36,30,1,10)
+D CODING(PN,"#"_FILE,IEN,VL("E"))
+"DATA",998.1,7,10,36,30,2,0)
+description^^W^20
+"DATA",998.1,7,10,36,30,3,0)
+instance^^N^30
+"DATA",998.1,7,10,36,30,4,0)
+ingredient^^N^40
+"DATA",998.1,7,10,37,0)
+Substance_50.416^1^50.416
+"DATA",998.1,7,10,37,30,0)
+^998.12I^4^4
+"DATA",998.1,7,10,37,30,1,0)
+type^.01^C^10
+"DATA",998.1,7,10,37,30,1,10)
+D CODING(PN,"#"_FILE,IEN,VL("E"))
+"DATA",998.1,7,10,37,30,2,0)
+description^^W^20
+"DATA",998.1,7,10,37,30,3,0)
+instance^^N^30
+"DATA",998.1,7,10,37,30,4,0)
+ingredient^^N^40
+"DATA",998.1,7,10,38,0)
+Substance_50.6^1^50.6
+"DATA",998.1,7,10,38,30,0)
+^998.12I^4^4
+"DATA",998.1,7,10,38,30,1,0)
+type^.01^C^10
+"DATA",998.1,7,10,38,30,1,10)
+D CODING(PN,"#"_FILE,IEN,VL("E"))
+"DATA",998.1,7,10,38,30,2,0)
+description^^W^20
+"DATA",998.1,7,10,38,30,3,0)
+instance^^N^30
+"DATA",998.1,7,10,38,30,4,0)
+ingredient^^N^40
+"DATA",998.1,7,10,39,0)
+Substance_50.605^1^50.605
+"DATA",998.1,7,10,39,30,0)
+^998.12I^4^4
+"DATA",998.1,7,10,39,30,1,0)
+type^.01^C^10
+"DATA",998.1,7,10,39,30,1,10)
+D CODING(PN,"#"_FILE,IEN,VL("E"))
+"DATA",998.1,7,10,39,30,2,0)
+description^^W^20
+"DATA",998.1,7,10,39,30,3,0)
+instance^^N^30
+"DATA",998.1,7,10,39,30,4,0)
+ingredient^^N^40
+"DATA",998.1,7,10,40,0)
+Substance_120.82^1^120.82
+"DATA",998.1,7,10,40,30,0)
+^998.12I^4^4
+"DATA",998.1,7,10,40,30,1,0)
+type^.01^C^10
+"DATA",998.1,7,10,40,30,1,10)
+D CODING(PN,"#"_FILE,IEN,VL("E"))
+"DATA",998.1,7,10,40,30,2,0)
+description^^W^20
+"DATA",998.1,7,10,40,30,3,0)
+instance^^N^30
+"DATA",998.1,7,10,40,30,4,0)
+ingredient^^N^40
+"DATA",998.1,7,10,41,0)
+Immunization^^9000010.11
+"DATA",998.1,7,10,41,30,0)
+^998.12I^19^19
+"DATA",998.1,7,10,41,30,1,0)
+identifier^^N^10
+"DATA",998.1,7,10,41,30,2,0)
+date^1201,.03~.01^C^20
+"DATA",998.1,7,10,41,30,2,10)
+D PUTDT(PN,$S(VL:VL("I"),1:VL(2,"I")))
+"DATA",998.1,7,10,41,30,3,0)
+vaccineType^.01^C^30
+"DATA",998.1,7,10,41,30,3,10)
+D CODING(PN,"#9999999.14",VL("I"),VL("E"))
+"DATA",998.1,7,10,41,30,4,0)
+patient^.02^C^40
+"DATA",998.1,7,10,41,30,4,10)
+D REF(PN,"Patient",.VL)
+"DATA",998.1,7,10,41,30,5,0)
+wasNotGiven^^B^50
+"DATA",998.1,7,10,41,30,6,0)
+reported^^B^60
+"DATA",998.1,7,10,41,30,7,0)
+performer^1204^C^70
+"DATA",998.1,7,10,41,30,7,10)
+D:VL REF(PN,"Practitioner",.VL)
+"DATA",998.1,7,10,41,30,8,0)
+requester^1202^C^80
+"DATA",998.1,7,10,41,30,8,10)
+D:VL REF(PN,"Practitioner",.VL)
+"DATA",998.1,7,10,41,30,9,0)
+manufacturer^^N^90
+"DATA",998.1,7,10,41,30,10,0)
+location^.03~.22^C^100
+"DATA",998.1,7,10,41,30,10,10)
+D REF(PN,"Location",.VL)
+"DATA",998.1,7,10,41,30,11,0)
+lotNumber^^N^110
+"DATA",998.1,7,10,41,30,12,0)
+expirationDate^^D^120
+"DATA",998.1,7,10,41,30,13,0)
+site^^N^130
+"DATA",998.1,7,10,41,30,14,0)
+route^^N^140
+"DATA",998.1,7,10,41,30,15,0)
+doseQuantity^^N^150
+"DATA",998.1,7,10,41,30,16,0)
+explanation^^N^160
+"DATA",998.1,7,10,41,30,17,0)
+reaction^^N^170
+"DATA",998.1,7,10,41,30,18,0)
+vaccinationProtocol^^N^180
+"DATA",998.1,7,10,41,30,19,0)
+id^@id^R^1
+"DATA",998.1,7,10,41,40,0)
+^998.13I^3^3
+"DATA",998.1,7,10,41,40,1,0)
+patient^.02^R^10
+"DATA",998.1,7,10,41,40,1,20)
+S X=$$COHORT(PN,$NA(^AUPNVIMM("C")))
+"DATA",998.1,7,10,41,40,2,0)
+patient:Patient^.02^R^10
+"DATA",998.1,7,10,41,40,2,20)
+S X=$$COHORT(PN,$NA(^AUPNVIMM("C")))
+"DATA",998.1,7,10,41,40,3,0)
+_id^@ien^T^30
+"DATA",998.1,7,10,42,0)
+Patient/#/Immunization
+"DATA",998.1,7,10,42,10)
+D COMPRT($NA(^AUPNVIMM("C")))
+"DATA",998.1,7,10,43,0)
+Flag^^26.13
+"DATA",998.1,7,10,43,30,0)
+^998.12I^7^7
+"DATA",998.1,7,10,43,30,1,0)
+identifier^^N^10
+"DATA",998.1,7,10,43,30,2,0)
+category^.02^C^20
+"DATA",998.1,7,10,43,30,2,10)
+D CODING(PN,"#26.13",$$VP2ID(VL("I")),VL("E"))
+"DATA",998.1,7,10,43,30,3,0)
+status^.03^C^30
+"DATA",998.1,7,10,43,30,3,10)
+D PUT(PN,$$LOW^XLFSTR(VL("E")))
+"DATA",998.1,7,10,43,30,4,0)
+patient^.01^C^40
+"DATA",998.1,7,10,43,30,4,10)
+D REF(PN,"Patient",.VL)
+"DATA",998.1,7,10,43,30,5,0)
+author^^N^50
+"DATA",998.1,7,10,43,30,6,0)
+code.text^1^W^60
+"DATA",998.1,7,10,43,30,7,0)
+id^@id^R^1
+"DATA",998.1,7,10,43,40,0)
+^998.13I^3^3
+"DATA",998.1,7,10,43,40,1,0)
+_id^@ien^T^10
+"DATA",998.1,7,10,43,40,2,0)
+patient^.01^R^20
+"DATA",998.1,7,10,43,40,2,20)
+S X=$NA(^DGPF(26.13,"B",RGNETREQ("PARAMS",PN,1,1)))
+"DATA",998.1,7,10,43,40,3,0)
+patient:Patient^.01^R^20
+"DATA",998.1,7,10,43,40,3,20)
+S X=$NA(^DGPF(26.13,"B",RGNETREQ("PARAMS",PN,1,1)))
+"DATA",998.1,7,10,44,0)
+Patient/#/Alert
+"DATA",998.1,7,10,44,10)
+D COMPRT($NA(^DGPF(26.13,"B")))
+"DATA",998.1,7,10,45,0)
+metadata
+"DATA",998.1,7,10,45,10)
+D TEMPLATE^RGSERGET("CONFORMANCE")
+"DATA",998.1,7,10,45,30,0)
+^998.12I
+"DATA",998.1,7,10,45,50,0)
+^998.15^3^3
+"DATA",998.1,7,10,45,50,1,0)
+CONFORMANCE
+"DATA",998.1,7,10,45,50,1,1,0)
+^^35^35^3170321.135056
+"DATA",998.1,7,10,45,50,1,1,1,0)
+{
+"DATA",998.1,7,10,45,50,1,1,2,0)
+  "resourceType": "Conformance",
+"DATA",998.1,7,10,45,50,1,1,3,0)
+  "text": {
+"DATA",998.1,7,10,45,50,1,1,4,0)
+    "status": "generated"
+"DATA",998.1,7,10,45,50,1,1,5,0)
+  },
+"DATA",998.1,7,10,45,50,1,1,6,0)
+  "publisher": "|@$P($$SITE^VASITE,U,2)|",
+"DATA",998.1,7,10,45,50,1,1,7,0)
+  "date": "|@$$FMTDATE^RGSER|",
+"DATA",998.1,7,10,45,50,1,1,8,0)
+  "software": {
+"DATA",998.1,7,10,45,50,1,1,9,0)
+    "name": "VistA Serialization Framework",
+"DATA",998.1,7,10,45,50,1,1,10,0)
+    "version": "|@$$VERSION^XPDUTL("RGSE")|"
+"DATA",998.1,7,10,45,50,1,1,11,0)
+  },
+"DATA",998.1,7,10,45,50,1,1,12,0)
+  "implementation": {
+"DATA",998.1,7,10,45,50,1,1,13,0)
+    "description": "VistA (|@RGSER("SERNM")|)"
+"DATA",998.1,7,10,45,50,1,1,14,0)
+  },
+"DATA",998.1,7,10,45,50,1,1,15,0)
+  "fhirVersion": "|@RGSER("VER")|",
+"DATA",998.1,7,10,45,50,1,1,16,0)
+  "acceptUnknown": "extensions",
+"DATA",998.1,7,10,45,50,1,1,17,0)
+  "format": "application/json+fhir",
+"DATA",998.1,7,10,45,50,1,1,18,0)
+  "rest": {
+"DATA",998.1,7,10,45,50,1,1,19,0)
+    "mode": "server",
+"DATA",998.1,7,10,45,50,1,1,20,0)
+    "security": {
+"DATA",998.1,7,10,45,50,1,1,21,0)
+      "extension": [
+"DATA",998.1,7,10,45,50,1,1,22,0)
+        {
+"DATA",998.1,7,10,45,50,1,1,23,0)
+          "url": "http://fhir-registry.smarthealthit.org/Profile/oauth-uris#authorize",
+"DATA",998.1,7,10,45,50,1,1,24,0)
+          "valueUri": "|@$$HOSTURL^RGNETWWW("oauth2/authorize")|"
+"DATA",998.1,7,10,45,50,1,1,25,0)
+        },
+"DATA",998.1,7,10,45,50,1,1,26,0)
+        {
+"DATA",998.1,7,10,45,50,1,1,27,0)
+          "url": "http://fhir-registry.smarthealthit.org/Profile/oauth-uris#token",
+"DATA",998.1,7,10,45,50,1,1,28,0)
+          "valueUri": "|@$$HOSTURL^RGNETWWW("oauth2/token")|"
+"DATA",998.1,7,10,45,50,1,1,29,0)
+        }
+"DATA",998.1,7,10,45,50,1,1,30,0)
+      ]
+"DATA",998.1,7,10,45,50,1,1,31,0)
+    },
+"DATA",998.1,7,10,45,50,1,1,32,0)
+    "resource": [
+"DATA",998.1,7,10,45,50,1,1,33,0)
+|#$$RESCONF^RGSEFHIR|]
+"DATA",998.1,7,10,45,50,1,1,34,0)
+  }
+"DATA",998.1,7,10,45,50,1,1,35,0)
+}
+"DATA",998.1,7,10,45,50,2,0)
+CONFORMANCE_RESOURCE
+"DATA",998.1,7,10,45,50,2,1,0)
+^^8^8^3150521.164212
+"DATA",998.1,7,10,45,50,2,1,1,0)
+    |#$S(RESNUM:",",1:"")| {
+"DATA",998.1,7,10,45,50,2,1,2,0)
+      "type": "|@RESNAME|",
+"DATA",998.1,7,10,45,50,2,1,3,0)
+      "interaction": {
+"DATA",998.1,7,10,45,50,2,1,4,0)
+        "code": "read"
+"DATA",998.1,7,10,45,50,2,1,5,0)
+      },
+"DATA",998.1,7,10,45,50,2,1,6,0)
+      "searchParam": [
+"DATA",998.1,7,10,45,50,2,1,7,0)
+|#$$SRPCONF^RGSEFHIR|]
+"DATA",998.1,7,10,45,50,2,1,8,0)
+    }
+"DATA",998.1,7,10,45,50,3,0)
+CONFORMANCE_PARAMETER
+"DATA",998.1,7,10,45,50,3,1,0)
+^^4^4^3150320.095235
+"DATA",998.1,7,10,45,50,3,1,1,0)
+        |#$S(SRPNUM:",",1:"")| {
+"DATA",998.1,7,10,45,50,3,1,2,0)
+          "name": "|@SRPNAME|",
+"DATA",998.1,7,10,45,50,3,1,3,0)
+          "type": "|@SRPTYPE|"
+"DATA",998.1,7,10,45,50,3,1,4,0)
+        }
+"DATA",998.1,7,10,46,0)
+Order^^100
+"DATA",998.1,7,10,46,30,0)
+^998.12I^9^9
+"DATA",998.1,7,10,46,30,1,0)
+identifier^^N^10
+"DATA",998.1,7,10,46,30,2,0)
+date^4^D^20
+"DATA",998.1,7,10,46,30,3,0)
+subject^.02^C^30
+"DATA",998.1,7,10,46,30,3,10)
+D:VL("I")["DPT" REF2(PN,"Patient",+VL("I"),VL("E"))
+"DATA",998.1,7,10,46,30,4,0)
+source^1^C^40
+"DATA",998.1,7,10,46,30,4,10)
+D REF(PN,"Practitioner",.VL)
+"DATA",998.1,7,10,46,30,5,0)
+target^^N^50
+"DATA",998.1,7,10,46,30,6,0)
+reason^^N^60
+"DATA",998.1,7,10,46,30,7,0)
+authority^^N^70
+"DATA",998.1,7,10,46,30,8,0)
+when^^N^80
+"DATA",998.1,7,10,46,30,9,0)
+detail:.reference^@ien^C^90
+"DATA",998.1,7,10,46,30,9,10)
+D PUT(PN,"DiagnosticOrder/"_VL("I"))
+"DATA",998.1,7,10,47,0)
+OperationOutcome^^.84
+"DATA",998.1,7,10,47,21)
+K:$G(VALS(FILE,IENS,"1.2~1","E"))'="RGSE" VALS
+"DATA",998.1,7,10,47,30,0)
+^998.12I^9^9
+"DATA",998.1,7,10,47,30,1,0)
+issue!start^^C^10
+"DATA",998.1,7,10,47,30,1,10)
+D NEWARY(PN),NEWOBJ(PN)
+"DATA",998.1,7,10,47,30,2,0)
+issue!end^^C^10.9
+"DATA",998.1,7,10,47,30,2,10)
+D ENDARY(PN)
+"DATA",998.1,7,10,47,30,3,0)
+severity^1^C^10.1
+"DATA",998.1,7,10,47,30,3,10)
+D PUT(PN,$S($G(VL("I"))=1:"error",1:"information"))
+"DATA",998.1,7,10,47,30,4,0)
+code^1.3^C^10.2
+"DATA",998.1,7,10,47,30,4,10)
+D CODING(PN,"http://hl7.org/fhir/issue-type",$P(VL("E"),":",2),$P(VL("E"),":",3))
+"DATA",998.1,7,10,47,30,5,0)
+details^2^W^10.3
+"DATA",998.1,7,10,47,30,5,10)
+%20
+"DATA",998.1,7,10,47,30,6,0)
+location^^N^10.4
+"DATA",998.1,7,10,47,30,7,0)
+text^4^T^5
+"DATA",998.1,7,10,47,30,7,10)
+TEXT
+"DATA",998.1,7,10,47,30,8,0)
+@package^1.2~1^N^1
+"DATA",998.1,7,10,47,30,9,0)
+id^@id^R^1
+"DATA",998.1,7,10,47,40,0)
+^998.13I^2^2
+"DATA",998.1,7,10,47,40,1,0)
+_id^@ien^T^10
+"DATA",998.1,7,10,47,40,2,0)
+@selector^^T^1
+"DATA",998.1,7,10,47,40,2,20)
+S X=$NA(^DI(.84,"C",$$LKPKG^XPDUTL("RGSE")))
+"DATA",998.1,7,10,47,50,0)
+^998.15^1^1
+"DATA",998.1,7,10,47,50,1,0)
+TEXT
+"DATA",998.1,7,10,47,50,1,1,0)
+^998.151^10^10^3150420^
+"DATA",998.1,7,10,47,50,1,1,1,0)
+,"text": {
+"DATA",998.1,7,10,47,50,1,1,2,0)
+"status": "generated",
+"DATA",998.1,7,10,47,50,1,1,3,0)
+"div": "<div>
+"DATA",998.1,7,10,47,50,1,1,4,0)
+<table style='margin:5px;border:1px solid black'>
+"DATA",998.1,7,10,47,50,1,1,5,0)
+<tr style='background:lightgray'><td><h1>Operation Outcome (|\@ien|)</h1></td></tr>
+"DATA",998.1,7,10,47,50,1,1,6,0)
+<tr><td style='border-bottom:1px solid black'><pre>|4,W|</pre></td></tr>
+"DATA",998.1,7,10,47,50,1,1,7,0)
+<tr><td><pre>|2,W|</pre></td></tr>
+"DATA",998.1,7,10,47,50,1,1,8,0)
+</table>
+"DATA",998.1,7,10,47,50,1,1,9,0)
+</div>"
+"DATA",998.1,7,10,47,50,1,1,10,0)
+} 
+"DATA",998.1,7,10,48,0)
+Person^^200
+"DATA",998.1,7,10,48,30,0)
+^998.12I^16^16
+"DATA",998.1,7,10,48,30,1,0)
+id^@id^R^1
+"DATA",998.1,7,10,48,30,2,0)
+active^7^C^90
+"DATA",998.1,7,10,48,30,2,10)
+D PUTBL^RGSEJSON(PN,'VL("I"))
+"DATA",998.1,7,10,48,30,3,0)
+address^@ien^O^60
+"DATA",998.1,7,10,48,30,3,10)
+*/Person_Address
+"DATA",998.1,7,10,48,30,4,0)
+birthDate^5^D^50
+"DATA",998.1,7,10,48,30,5,0)
+gender^4^C^40
+"DATA",998.1,7,10,48,30,5,10)
+D PUT(PN,$$LOW^XLFSTR(VL("E")))
+"DATA",998.1,7,10,48,30,6,0)
+identifier^^N^10
+"DATA",998.1,7,10,48,30,7,0)
+link^^N^90
+"DATA",998.1,7,10,48,30,8,0)
+managingOrganization^^C^80
+"DATA",998.1,7,10,48,30,8,10)
+D REF2(PN,"Organization",DUZ(2),$P(^DIC(4,DUZ(2),0),U))
+"DATA",998.1,7,10,48,30,9,0)
+name^.01^C^20.1
+"DATA",998.1,7,10,48,30,9,10)
+D NAME(VL("I"))
+"DATA",998.1,7,10,48,30,10,0)
+name!nickname^13^C^20.2
+"DATA",998.1,7,10,48,30,10,10)
+D:VL NAME(","_VL("I"),PN(0))
+"DATA",998.1,7,10,48,30,11,0)
+photo^^N^70
+"DATA",998.1,7,10,48,30,12,0)
+telecom!phone:work^.132^C^30
+"DATA",998.1,7,10,48,30,12,10)
+D TELECOM
+"DATA",998.1,7,10,48,30,13,0)
+telecom!phone:home^.131^C^30.1
+"DATA",998.1,7,10,48,30,13,10)
+D TELECOM
+"DATA",998.1,7,10,48,30,14,0)
+telecom!fax:work^.136^C^30.2
+"DATA",998.1,7,10,48,30,14,10)
+D TELECOM
+"DATA",998.1,7,10,48,30,15,0)
+name!start^^C^20
+"DATA",998.1,7,10,48,30,15,10)
+D NEWARY(PN)
+"DATA",998.1,7,10,48,30,16,0)
+name!end^^C^20.9
+"DATA",998.1,7,10,48,30,16,10)
+D ENDARY(PN)
+"DATA",998.1,7,10,48,40,0)
+^998.13I^1^1
+"DATA",998.1,7,10,48,40,1,0)
+_id^@ien^T^10
+"DATA",998.1,7,10,49,0)
+Person_Address^1^200
+"DATA",998.1,7,10,49,30,0)
+^998.12I^7^7
+"DATA",998.1,7,10,49,30,1,0)
+use^^S^10
+"DATA",998.1,7,10,49,30,1,10)
+home
+"DATA",998.1,7,10,49,30,2,0)
+line!1^.111^F^20
+"DATA",998.1,7,10,49,30,3,0)
+line!2^.112^F^20.1
+"DATA",998.1,7,10,49,30,4,0)
+line!3^.113^F^20.2
+"DATA",998.1,7,10,49,30,5,0)
+city^.114^F^50
+"DATA",998.1,7,10,49,30,6,0)
+state^.115^F^60
+"DATA",998.1,7,10,49,30,7,0)
+postalCode^.116^F^80
+"DATA",998.1,7,10,50,0)
+DiagnosticRequest
+"DATA",998.1,7,10,51,0)
+Patient_Congregation^1^13
+"DATA",998.1,7,10,51,30,0)
+^998.12I^2^2
+"DATA",998.1,7,10,51,30,1,0)
+valueString^.01^F^10
+"DATA",998.1,7,10,51,30,2,0)
+attr:url^^N^1
+"DATA",998.1,7,10,51,30,2,10)
+http://hl7.org/fhir/StructureDefinition/patient-congregation
+"DATA",998.1,7,20,0)
+^998.14^5^5^3170321^^^^
+"DATA",998.1,7,20,1,0)
+Access-Control-Allow-Credentials: true
+"DATA",998.1,7,20,2,0)
+Access-Control-Allow-Headers: origin, authorization, accept, content-type, x-requested-with
+"DATA",998.1,7,20,3,0)
+Access-Control-Allow-Methods: GET, HEAD, POST, PUT, DELETE, TRACE, OPTIONS
+"DATA",998.1,7,20,4,0)
+Access-Control-Allow-Origin: *
+"DATA",998.1,7,20,5,0)
+Cache-Control: max-age=0
+"DATA",998.1,7,99,0)
+^^25^25^3170322.08374
+"DATA",998.1,7,99,1,0)
+This is the base URL for the STU3 JSON FHIR endpoint. 
+"DATA",998.1,7,99,2,0)
+
+"DATA",998.1,7,99,3,0)
+<hr> 
+"DATA",998.1,7,99,4,0)
+
+"DATA",998.1,7,99,5,0)
+This service is supported by the <b>VistA Serialization Framework</b>, 
+"DATA",998.1,7,99,6,0)
+developed by Doug Martin of the <a href="http://www.regenstrief.org"
+"DATA",998.1,7,99,7,0)
+target="_blank">Regenstrief Institute.<a>
+"DATA",998.1,7,99,8,0)
+
+"DATA",998.1,7,99,9,0)
+<p>
+"DATA",998.1,7,99,10,0)
+
+"DATA",998.1,7,99,11,0)
+It is freely available as open source under the 
+"DATA",998.1,7,99,12,0)
+<a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License, Version 2.0</a>:
+"DATA",998.1,7,99,13,0)
+
+"DATA",998.1,7,99,14,0)
+<ul> 
+"DATA",998.1,7,99,15,0)
+<li> The FHIR conformance document is available
+"DATA",998.1,7,99,16,0)
+  <a href="/STU3/metadata?_format=json" target="_blank">here</a>
+"DATA",998.1,7,99,17,0)
+</li>
+"DATA",998.1,7,99,18,0)
+<li> The complete source may be downloaded 
+"DATA",998.1,7,99,19,0)
+  <a href="https://github.com/mdgeek/VistA-Serialization-Framework" 
+"DATA",998.1,7,99,20,0)
+     target="_blank">here.</a>
+"DATA",998.1,7,99,21,0)
+</li>
+"DATA",998.1,7,99,22,0)
+<li> A working virtual machine may be built from this
+"DATA",998.1,7,99,23,0)
+  <a href="https://github.com/mdgeek/VistA-FHIR-CWF"
+"DATA",998.1,7,99,24,0)
+     target="_blank">source.</a>
+"DATA",998.1,7,99,25,0)
 </ul>
 "FIA",996.52)
 NETSERV HTTP ENDPOINT
@@ -6463,9 +9599,9 @@ SERIALIZATION FRAMEWORK^RGSE^Serialization framework
 "PKG",224,22,0)
 ^9.49I^1^1
 "PKG",224,22,1,0)
-1.0^3161017
+1.0^3170322
 "PKG",224,22,1,1,0)
-^^2^2^3161017
+^^2^2^3170322
 "PKG",224,22,1,1,1,0)
 Framework for serializing and deserializing data for transport to and from
 "PKG",224,22,1,1,2,0)
@@ -6547,11 +9683,11 @@ D XPZ2^XPDIQ
 "RTN")
 17
 "RTN","RGSEFHIJ")
-0^14^B36664521
+0^14^B37593330
 "RTN","RGSEFHIJ",1,0)
-RGSEFHIJ ;RI/CBMI/DKM - JSON FHIR Support ;08-Aug-2016 08:13;DKM
+RGSEFHIJ ;RI/CBMI/DKM - JSON FHIR Support ;21-Mar-2017 17:27;DKM
 "RTN","RGSEFHIJ",2,0)
- ;;1.0;SERIALIZATION FRAMEWORK;;07-Feb-2015 08:51;Build 495
+ ;;1.0;SERIALIZATION FRAMEWORK;;07-Feb-2015 08:51;Build 505
 "RTN","RGSEFHIJ",3,0)
  ;=================================================================
 "RTN","RGSEFHIJ",4,0)
@@ -6577,7 +9713,7 @@ PSTINIT D PSTINIT^RGSEJSON
 "RTN","RGSEFHIJ",14,0)
 PRELIST I TOP,'$$INBUNDLE D NEWBNDL("Search results for resource type "_PATH) Q
 "RTN","RGSEFHIJ",15,0)
- D NEWARY(PNAME)
+ D:'$$INARY^RGSEJSON NEWARY("PRELIST")
 "RTN","RGSEFHIJ",16,0)
  Q
 "RTN","RGSEFHIJ",17,0)
@@ -6585,7 +9721,7 @@ PRELIST I TOP,'$$INBUNDLE D NEWBNDL("Search results for resource type "_PATH) Q
 "RTN","RGSEFHIJ",18,0)
 PSTLIST I TOP,$$INBUNDLE,'$$ISERROR^RGNETWWW D ENDBNDL Q
 "RTN","RGSEFHIJ",19,0)
- D ENDARY(PNAME)
+ D:$$INARY^RGSEJSON("PRELIST") ENDARY("PRELIST")
 "RTN","RGSEFHIJ",20,0)
  Q
 "RTN","RGSEFHIJ",21,0)
@@ -6965,7 +10101,7 @@ PERIOD(START,END) ;
 "RTN","RGSEFHIJ",208,0)
 NAME(NAME,USE) ;
 "RTN","RGSEFHIJ",209,0)
- N X
+ N X,F
 "RTN","RGSEFHIJ",210,0)
  D NEWOBJ("@name")
 "RTN","RGSEFHIJ",211,0)
@@ -6973,9 +10109,9 @@ NAME(NAME,USE) ;
 "RTN","RGSEFHIJ",212,0)
  D PUT("text",$S($E(NAME)=",":$E(NAME,2,99),1:NAME))
 "RTN","RGSEFHIJ",213,0)
- S X(1)=$P(NAME,","),NAME=$P(NAME,",",2,99)
+ S X(1)=$P(NAME,","),NAME=$P(NAME,",",2,99),F=RGSER("VER")<1.8
 "RTN","RGSEFHIJ",214,0)
- D:$L(X(1)) PUTARY("family",.X)
+ D:$L(X(1)) PUTARY("family",.X):F,PUT("family",X(1)):'F
 "RTN","RGSEFHIJ",215,0)
  K X
 "RTN","RGSEFHIJ",216,0)
@@ -6991,7 +10127,7 @@ NAME(NAME,USE) ;
 "RTN","RGSEFHIR",1,0)
 RGSEFHIR ;RI/CBMI/DKM - Generic FHIR Support ;08-Aug-2016 08:42;DKM
 "RTN","RGSEFHIR",2,0)
- ;;1.0;SERIALIZATION FRAMEWORK;;07-Feb-2015 08:51;Build 495
+ ;;1.0;SERIALIZATION FRAMEWORK;;07-Feb-2015 08:51;Build 505
 "RTN","RGSEFHIR",3,0)
  ;=================================================================
 "RTN","RGSEFHIR",4,0)
@@ -7183,7 +10319,7 @@ PARSIDTP(TYPE) ;
 "RTN","RGSEFHIX",1,0)
 RGSEFHIX ;RI/CBMI/DKM - XML FHIR Support ;08-Aug-2016 08:13;DKM
 "RTN","RGSEFHIX",2,0)
- ;;1.0;SERIALIZATION FRAMEWORK;;07-Feb-2015 08:51;Build 495
+ ;;1.0;SERIALIZATION FRAMEWORK;;07-Feb-2015 08:51;Build 505
 "RTN","RGSEFHIX",3,0)
  ;=================================================================
 "RTN","RGSEFHIX",4,0)
@@ -7629,7 +10765,7 @@ NAME(NAME,USE) ;
 "RTN","RGSEINIT",1,0)
 RGSEINIT ;RI/CBMI/DKM - Installation Support ;19-Mar-2015 13:31;DKM
 "RTN","RGSEINIT",2,0)
- ;;1.0;SERIALIZATION FRAMEWORK;;07-Feb-2015 08:51;Build 495
+ ;;1.0;SERIALIZATION FRAMEWORK;;07-Feb-2015 08:51;Build 505
 "RTN","RGSEINIT",3,0)
  ;=================================================================
 "RTN","RGSEINIT",4,0)
@@ -7665,11 +10801,11 @@ PRE N SER,DIK,DA
 "RTN","RGSEINIT",19,0)
 POST Q
 "RTN","RGSEJSON")
-0^2^B29088608
+0^2^B29696478
 "RTN","RGSEJSON",1,0)
-RGSEJSON ;RI/CBMI/DKM - JSON Serialization Support ;22-Apr-2015 11:31;DKM
+RGSEJSON ;RI/CBMI/DKM - JSON Serialization Support ;21-Mar-2017 15:43;DKM
 "RTN","RGSEJSON",2,0)
- ;;1.0;SERIALIZATION FRAMEWORK;;14-March-2014;Build 495
+ ;;1.0;SERIALIZATION FRAMEWORK;;14-March-2014;Build 505
 "RTN","RGSEJSON",3,0)
  ;=================================================================
 "RTN","RGSEJSON",4,0)
@@ -7987,167 +11123,173 @@ ENDARY(NM) ;
 "RTN","RGSEJSON",160,0)
  ; Returns true if inside an array
 "RTN","RGSEJSON",161,0)
-INARY() N LVL
+INARY(NM) ;
 "RTN","RGSEJSON",162,0)
- S LVL=$$GETLVL
+ N LVL
 "RTN","RGSEJSON",163,0)
- Q $S('LVL:0,1:'RGSER("L",LVL,0))
+ S LVL=$$GETLVL
 "RTN","RGSEJSON",164,0)
- ; Start an object level
+ Q:'LVL 0
 "RTN","RGSEJSON",165,0)
-NEWOBJ(NM) ;
+ Q:RGSER("L",LVL,0) 0
 "RTN","RGSEJSON",166,0)
- D NEWLVL(.NM,1)
+ Q $S('$D(NM):1,1:RGSER("L",LVL,1)=NM)
 "RTN","RGSEJSON",167,0)
- Q
+ ; Start an object level
 "RTN","RGSEJSON",168,0)
- ; End an object level
+NEWOBJ(NM) ;
 "RTN","RGSEJSON",169,0)
-ENDOBJ(NM) ;
+ D NEWLVL(.NM,1)
 "RTN","RGSEJSON",170,0)
- D ENDLVL(.NM,1)
+ Q
 "RTN","RGSEJSON",171,0)
- Q
+ ; End an object level
 "RTN","RGSEJSON",172,0)
- ; Start a new level
+ENDOBJ(NM) ;
 "RTN","RGSEJSON",173,0)
- ; TP: 0 = array; 1 = object
+ D ENDLVL(.NM,1)
 "RTN","RGSEJSON",174,0)
- ; The level stack is at RGSER("L"):
+ Q
 "RTN","RGSEJSON",175,0)
- ;   RGSER("L",LVL)   = # of elements at this level
+ ; Start a new level
 "RTN","RGSEJSON",176,0)
- ;   RGSER("L",LVL,0) = 0 if array, 1 if object
+ ; TP: 0 = array; 1 = object
 "RTN","RGSEJSON",177,0)
- ;   RGSER("L",LVL,1) = Tag associated with level
+ ; The level stack is at RGSER("L"):
 "RTN","RGSEJSON",178,0)
- ;   RGSER("L",LVL,2) = Position of level in output stream
+ ;   RGSER("L",LVL)   = # of elements at this level
 "RTN","RGSEJSON",179,0)
-NEWLVL(NM,TP) ;
+ ;   RGSER("L",LVL,0) = 0 if array, 1 if object
 "RTN","RGSEJSON",180,0)
- N LVL,OUT,CNT,ARY
+ ;   RGSER("L",LVL,1) = Tag associated with level
 "RTN","RGSEJSON",181,0)
- S ARY=$$INARY,LVL=$$GETLVL,OUT=""
+ ;   RGSER("L",LVL,2) = Position of level in output stream
 "RTN","RGSEJSON",182,0)
- I LVL S CNT=RGSER("L",LVL),OUT=$S(CNT:",",1:""),RGSER("L",LVL)=CNT+1
+NEWLVL(NM,TP) ;
 "RTN","RGSEJSON",183,0)
- S LVL=LVL+1,RGSER("L",LVL)=0,RGSER("L",LVL,0)=TP,RGSER("L",LVL,1)=$G(NM)
+ N LVL,OUT,CNT,ARY
 "RTN","RGSEJSON",184,0)
- I 'ARY,$L($G(NM)),$E(NM)'="@" S OUT=OUT_$$NM(NM)
+ S ARY=$$INARY,LVL=$$GETLVL,OUT=""
 "RTN","RGSEJSON",185,0)
- D ADD(OUT_$S(TP:"{",1:"["))
+ I LVL S CNT=RGSER("L",LVL),OUT=$S(CNT:",",1:""),RGSER("L",LVL)=CNT+1
 "RTN","RGSEJSON",186,0)
- S RGSER("L",LVL,2)=RGNETRSP("LAST")
+ S LVL=LVL+1,RGSER("L",LVL)=0,RGSER("L",LVL,0)=TP,RGSER("L",LVL,1)=$G(NM)
 "RTN","RGSEJSON",187,0)
- Q
+ I 'ARY,$L($G(NM)),$E(NM)'="@" S OUT=OUT_$$NM(NM)
 "RTN","RGSEJSON",188,0)
- ; End a level
+ D ADD(OUT_$S(TP:"{",1:"["))
 "RTN","RGSEJSON",189,0)
- ; If an empty level is ended, it is completely removed
+ S RGSER("L",LVL,2)=RGNETRSP("LAST")
 "RTN","RGSEJSON",190,0)
- ; from the output stream.
+ Q
 "RTN","RGSEJSON",191,0)
-ENDLVL(NM,TP) ;
+ ; End a level
 "RTN","RGSEJSON",192,0)
- N LVL,OUT,MATCH
+ ; If an empty level is ended, it is completely removed
 "RTN","RGSEJSON",193,0)
- F LVL=$$GETLVL:-1:1 D  Q:MATCH
+ ; from the output stream.
 "RTN","RGSEJSON",194,0)
- .I RGSER("L",LVL) D
+ENDLVL(NM,TP) ;
 "RTN","RGSEJSON",195,0)
- ..S OUT=$S(RGSER("L",LVL,0):"}",1:"]")
+ N LVL,OUT,MATCH
 "RTN","RGSEJSON",196,0)
- ..D ADD(OUT)
+ F LVL=$$GETLVL:-1:1 D  Q:MATCH
 "RTN","RGSEJSON",197,0)
- .E  D
+ .I RGSER("L",LVL) D
 "RTN","RGSEJSON",198,0)
- ..D REPLACE^RGNETWWW(RGSER("L",LVL,2),"")
+ ..S OUT=$S(RGSER("L",LVL,0):"}",1:"]")
 "RTN","RGSEJSON",199,0)
- ..S:LVL>1 RGSER("L",LVL-1)=RGSER("L",LVL-1)-1
+ ..D ADD(OUT)
 "RTN","RGSEJSON",200,0)
- .S MATCH=RGSER("L",LVL,0)=TP
+ .E  D
 "RTN","RGSEJSON",201,0)
- .S:MATCH MATCH=$G(NM)=RGSER("L",LVL,1)
+ ..D REPLACE^RGNETWWW(RGSER("L",LVL,2),"")
 "RTN","RGSEJSON",202,0)
- .K RGSER("L",LVL)
+ ..S:LVL>1 RGSER("L",LVL-1)=RGSER("L",LVL-1)-1
 "RTN","RGSEJSON",203,0)
- Q
+ .S MATCH=RGSER("L",LVL,0)=TP
 "RTN","RGSEJSON",204,0)
- ; Creates multiple levels as specified by the
+ .S:MATCH MATCH=$G(NM)=RGSER("L",LVL,1)
 "RTN","RGSEJSON",205,0)
- ; array returned by PRSLVLS.
+ .K RGSER("L",LVL)
 "RTN","RGSEJSON",206,0)
-NEWLVLS(LVLS) ;
+ Q
 "RTN","RGSEJSON",207,0)
- N LP
+ ; Creates multiple levels as specified by the
 "RTN","RGSEJSON",208,0)
- F LP=1:1:LVLS-1 D NEWLVL(LVLS(LP,0),LVLS(LP,1))
-"RTN","RGSEJSON",209,0)
- Q
-"RTN","RGSEJSON",210,0)
- ; Ends multiple levels as specified by the
-"RTN","RGSEJSON",211,0)
  ; array returned by PRSLVLS.
-"RTN","RGSEJSON",212,0)
-ENDLVLS(LVLS) ;
-"RTN","RGSEJSON",213,0)
+"RTN","RGSEJSON",209,0)
+NEWLVLS(LVLS) ;
+"RTN","RGSEJSON",210,0)
  N LP
+"RTN","RGSEJSON",211,0)
+ F LP=1:1:LVLS-1 D NEWLVL(LVLS(LP,0),LVLS(LP,1))
+"RTN","RGSEJSON",212,0)
+ Q
+"RTN","RGSEJSON",213,0)
+ ; Ends multiple levels as specified by the
 "RTN","RGSEJSON",214,0)
- F LP=LVLS-1:-1:1 D ENDLVL(LVLS(LP,0),LVLS(LP,1))
+ ; array returned by PRSLVLS.
 "RTN","RGSEJSON",215,0)
- Q
+ENDLVLS(LVLS) ;
 "RTN","RGSEJSON",216,0)
- ; Parses a property name.  A property name can designate multiple levels by
+ N LP
 "RTN","RGSEJSON",217,0)
- ; introducing a "." separator to indicate an object level or a ":" to indicate
+ F LP=LVLS-1:-1:1 D ENDLVL(LVLS(LP,0),LVLS(LP,1))
 "RTN","RGSEJSON",218,0)
- ; an array level.  For example, A:B.C, represents an attribute named "C" under
-"RTN","RGSEJSON",219,0)
- ; an object named "B" under an array named "A".
-"RTN","RGSEJSON",220,0)
- ;   NM   = The property name to parse
-"RTN","RGSEJSON",221,0)
- ;  .LVLS = Array to receive parsed results
-"RTN","RGSEJSON",222,0)
- ; Returns the attribute name (in the above example, "C").
-"RTN","RGSEJSON",223,0)
-PRSLVLS(NM,LVLS) ;
-"RTN","RGSEJSON",224,0)
- N NM2,LN,POS,PC
-"RTN","RGSEJSON",225,0)
- K LVLS
-"RTN","RGSEJSON",226,0)
- S NM=$G(NM),NM2=$TR(NM,".",":"),LN=$L(NM2,":"),POS=0
-"RTN","RGSEJSON",227,0)
- F LVLS=1:1:LN D
-"RTN","RGSEJSON",228,0)
- .S PC=$P(NM2,":",LVLS),POS=POS+$L(PC)+1
-"RTN","RGSEJSON",229,0)
- .S LVLS(LVLS,0)=PC,LVLS(LVLS,1)=$S(LVLS=LN:-1,1:$E(NM,POS)=".")
-"RTN","RGSEJSON",230,0)
- Q:$Q PC
-"RTN","RGSEJSON",231,0)
  Q
+"RTN","RGSEJSON",219,0)
+ ; Parses a property name.  A property name can designate multiple levels by
+"RTN","RGSEJSON",220,0)
+ ; introducing a "." separator to indicate an object level or a ":" to indicate
+"RTN","RGSEJSON",221,0)
+ ; an array level.  For example, A:B.C, represents an attribute named "C" under
+"RTN","RGSEJSON",222,0)
+ ; an object named "B" under an array named "A".
+"RTN","RGSEJSON",223,0)
+ ;   NM   = The property name to parse
+"RTN","RGSEJSON",224,0)
+ ;  .LVLS = Array to receive parsed results
+"RTN","RGSEJSON",225,0)
+ ; Returns the attribute name (in the above example, "C").
+"RTN","RGSEJSON",226,0)
+PRSLVLS(NM,LVLS) ;
+"RTN","RGSEJSON",227,0)
+ N NM2,LN,POS,PC
+"RTN","RGSEJSON",228,0)
+ K LVLS
+"RTN","RGSEJSON",229,0)
+ S NM=$G(NM),NM2=$TR(NM,".",":"),LN=$L(NM2,":"),POS=0
+"RTN","RGSEJSON",230,0)
+ F LVLS=1:1:LN D
+"RTN","RGSEJSON",231,0)
+ .S PC=$P(NM2,":",LVLS),POS=POS+$L(PC)+1
 "RTN","RGSEJSON",232,0)
- ; Return current level
+ .S LVLS(LVLS,0)=PC,LVLS(LVLS,1)=$S(LVLS=LN:-1,1:$E(NM,POS)=".")
 "RTN","RGSEJSON",233,0)
-GETLVL() Q +$O(RGSER("L",""),-1)
+ Q:$Q PC
 "RTN","RGSEJSON",234,0)
- ; Enclose value in quotes (escape contents if necessary)
+ Q
 "RTN","RGSEJSON",235,0)
-QT(X) Q """"_$$ESCAPE^RGSER($G(X))_""""
+ ; Return current level
 "RTN","RGSEJSON",236,0)
- ; Convenience method
+GETLVL() Q +$O(RGSER("L",""),-1)
 "RTN","RGSEJSON",237,0)
-ADD(X) D ADD^RGNETWWW(X)
+ ; Enclose value in quotes (escape contents if necessary)
 "RTN","RGSEJSON",238,0)
+QT(X) Q """"_$$ESCAPE^RGSER($G(X))_""""
+"RTN","RGSEJSON",239,0)
+ ; Convenience method
+"RTN","RGSEJSON",240,0)
+ADD(X) D ADD^RGNETWWW(X)
+"RTN","RGSEJSON",241,0)
  Q
 "RTN","RGSER")
 0^3^B14022816
 "RTN","RGSER",1,0)
 RGSER ;RI/CBMI/DKM - Core Serialization Support ;07-Aug-2016 04:44;DKM
 "RTN","RGSER",2,0)
- ;;1.0;SERIALIZATION FRAMEWORK;;14-March-2014;Build 495
+ ;;1.0;SERIALIZATION FRAMEWORK;;14-March-2014;Build 505
 "RTN","RGSER",3,0)
  ; RPC: Perform a GET operation
 "RTN","RGSER",4,0)
@@ -8379,7 +11521,7 @@ ISMATCH(PATH,PTRN) ;
 "RTN","RGSERDD",1,0)
 RGSERDD ;RI/CBMI/DKM - Data dictionary logic ;28-May-2015 09:34;DKM
 "RTN","RGSERDD",2,0)
- ;;1.0;SERIALIZATION FRAMEWORK;;14-March-2014;Build 495
+ ;;1.0;SERIALIZATION FRAMEWORK;;14-March-2014;Build 505
 "RTN","RGSERDD",3,0)
  ;=================================================================
 "RTN","RGSERDD",4,0)
@@ -8423,7 +11565,7 @@ ITXCTRL(X,DA) ;
 "RTN","RGSERDOC",1,0)
 RGSERDOC ;RI/CBMI/DKM - Document Resource Support ;31-Mar-2015 22:52;DKM
 "RTN","RGSERDOC",2,0)
- ;;1.0;SERIALIZATION FRAMEWORK;;07-Feb-2015 08:51;Build 495
+ ;;1.0;SERIALIZATION FRAMEWORK;;07-Feb-2015 08:51;Build 505
 "RTN","RGSERDOC",3,0)
  ;=================================================================
 "RTN","RGSERDOC",4,0)
@@ -8459,7 +11601,7 @@ TOBINARY(IEN,PRE,PST) ;
 "RTN","RGSERENC",1,0)
 RGSERENC ;RI/CBMI/DKM - Encounter Resource Support ;01-Apr-2015 16:50;DKM
 "RTN","RGSERENC",2,0)
- ;;1.0;SERIALIZATION FRAMEWORK;;07-Feb-2015 08:51;Build 495
+ ;;1.0;SERIALIZATION FRAMEWORK;;07-Feb-2015 08:51;Build 505
 "RTN","RGSERENC",3,0)
  ;=================================================================
 "RTN","RGSERENC",4,0)
@@ -8523,7 +11665,7 @@ VISREFDT(IEN) ;
 "RTN","RGSERGET",1,0)
 RGSERGET ;RI/CBMI/DKM - GET method support ;07-Aug-2016 04:32;DKM
 "RTN","RGSERGET",2,0)
- ;;1.0;SERIALIZATION FRAMEWORK;;14-March-2014;Build 495
+ ;;1.0;SERIALIZATION FRAMEWORK;;14-March-2014;Build 505
 "RTN","RGSERGET",3,0)
  ;=================================================================
 "RTN","RGSERGET",4,0)
@@ -9469,7 +12611,7 @@ F(FN,SB,ESC) ;
 "RTN","RGSERLAB",1,0)
 RGSERLAB ;RI/CBMI/DKM - Return lab observations. ;04-Aug-2016 22:02;DKM
 "RTN","RGSERLAB",2,0)
- ;;1.0;SERIALIZATION FRAMEWORK;;07-Feb-2015 08:51;Build 495
+ ;;1.0;SERIALIZATION FRAMEWORK;;07-Feb-2015 08:51;Build 505
 "RTN","RGSERLAB",3,0)
  ;=================================================================
 "RTN","RGSERLAB",4,0)
@@ -9685,7 +12827,7 @@ PUT(NAME,INTERNAL,EXTERNAL) ;
 "RTN","RGSERLOC",1,0)
 RGSERLOC ;RI/CBMI/DKM - Location Resource Support ;04-Aug-2016 23:16;DKM
 "RTN","RGSERLOC",2,0)
- ;;1.0;SERIALIZATION FRAMEWORK;;07-Feb-2015 08:51;Build 495
+ ;;1.0;SERIALIZATION FRAMEWORK;;07-Feb-2015 08:51;Build 505
 "RTN","RGSERLOC",3,0)
  ;=================================================================
 "RTN","RGSERLOC",4,0)
@@ -9729,9 +12871,9 @@ GETSTAT(INACT,REACT) ;
 "RTN","RGSEROBS")
 0^7^B16358628
 "RTN","RGSEROBS",1,0)
-RGSEROBS ;RI/CBMI/DKM - Return observations in intermediate format. ;01-Apr-2015 16:50;DKM
+RGSEROBS ;RI/CBMI/DKM - Return observations in intermediate format. ;21-Mar-2017 15:13;DKM
 "RTN","RGSEROBS",2,0)
- ;;1.0;SERIALIZATION FRAMEWORK;;07-Feb-2015 08:51;Build 495
+ ;;1.0;SERIALIZATION FRAMEWORK;;07-Feb-2015 08:51;Build 505
 "RTN","RGSEROBS",3,0)
  ;=================================================================
 "RTN","RGSEROBS",4,0)
@@ -9961,7 +13103,7 @@ RELJSN(RELATED) ;
 "RTN","RGSERPAT",1,0)
 RGSERPAT ;RI/CBMI/DKM - Patient Resource Support ;04-Aug-2016 18:18;DKM
 "RTN","RGSERPAT",2,0)
- ;;1.0;SERIALIZATION FRAMEWORK;;07-Feb-2015 08:51;Build 495
+ ;;1.0;SERIALIZATION FRAMEWORK;;07-Feb-2015 08:51;Build 505
 "RTN","RGSERPAT",3,0)
  ;=================================================================
 "RTN","RGSERPAT",4,0)
@@ -10015,7 +13157,7 @@ COUNTY(STATE,COUNTY) ;
 "RTN","RGSERPER",1,0)
 RGSERPER ;RI/CBMI/DKM - User/Practitioner/Person Resource Support ;31-Mar-2015 18:40;DKM
 "RTN","RGSERPER",2,0)
- ;;1.0;SERIALIZATION FRAMEWORK;;07-Feb-2015 08:51;Build 495
+ ;;1.0;SERIALIZATION FRAMEWORK;;07-Feb-2015 08:51;Build 505
 "RTN","RGSERPER",3,0)
  ;=================================================================
 "RTN","RGSERPER",4,0)
@@ -10031,7 +13173,7 @@ NAMEITER(CTX) ;
 "RTN","RGSERVIT",1,0)
 RGSERVIT ;RI/CBMI/DKM - Return vital observations. ;17-Apr-2015 12:44;DKM
 "RTN","RGSERVIT",2,0)
- ;;1.0;SERIALIZATION FRAMEWORK;;07-Feb-2015 08:51;Build 495
+ ;;1.0;SERIALIZATION FRAMEWORK;;07-Feb-2015 08:51;Build 505
 "RTN","RGSERVIT",3,0)
  ;=================================================================
 "RTN","RGSERVIT",4,0)
@@ -10239,7 +13381,7 @@ RANGES N VAL
 "RTN","RGSEXML",1,0)
 RGSEXML ;RI/CBMI/DKM - XML Support ;08-Apr-2015 17:02;DKM
 "RTN","RGSEXML",2,0)
- ;;1.0;SERIALIZATION FRAMEWORK;;14-March-2014;Build 495
+ ;;1.0;SERIALIZATION FRAMEWORK;;14-March-2014;Build 505
 "RTN","RGSEXML",3,0)
  ;=================================================================
 "RTN","RGSEXML",4,0)
@@ -10547,6 +13689,8 @@ QT(X) Q """"_$$ESCAPE^RGSER(X)_""""
 "TEMP",998.1,"DSTU1")
 
 "TEMP",998.1,"DSTU2")
+
+"TEMP",998.1,"STU3")
 
 "VER")
 8.0^22.0

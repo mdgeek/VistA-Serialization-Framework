@@ -1,4 +1,4 @@
-RGSEROBS ;RI/CBMI/DKM - Return observations in intermediate format. ;01-Apr-2015 16:50;DKM
+RGSEROBS ;RI/CBMI/DKM - Return observations in intermediate format. ;21-Mar-2017 15:13;DKM
  ;;1.0;SERIALIZATION FRAMEWORK;;07-Feb-2015 08:51;Build 249
  ;=================================================================
 OBS(DFN,ID,BEG,END,MAX) ;

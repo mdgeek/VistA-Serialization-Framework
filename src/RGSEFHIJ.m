@@ -1,4 +1,4 @@
-RGSEFHIJ ;RI/CBMI/DKM - JSON FHIR Support ;08-Aug-2016 08:13;DKM
+RGSEFHIJ ;RI/CBMI/DKM - JSON FHIR Support ;21-Mar-2017 17:27;DKM
  ;;1.0;SERIALIZATION FRAMEWORK;;07-Feb-2015 08:51
  ;=================================================================
  ; Implements Serializer interface
@@ -12,11 +12,11 @@ PSTINIT D PSTINIT^RGSEJSON
  Q
  ; Serializer.PRELIST - List preprocessing
 PRELIST I TOP,'$$INBUNDLE D NEWBNDL("Search results for resource type "_PATH) Q
- D NEWARY(PNAME)
+ D:'$$INARY^RGSEJSON NEWARY("PRELIST")
  Q
  ; Serializer.PSTLIST - List postprocessing
 PSTLIST I TOP,$$INBUNDLE,'$$ISERROR^RGNETWWW D ENDBNDL Q
- D ENDARY(PNAME)
+ D:$$INARY^RGSEJSON("PRELIST") ENDARY("PRELIST")
  Q
  ; Serializer.COMPOSE - Compose an entry
 COMPOSE N ENTRY,RTYPE,ATR,TAG,DSTU1
@@ -206,12 +206,12 @@ PERIOD(START,END) ;
  .D ENDOBJ("period")
  Q
 NAME(NAME,USE) ;
- N X
+ N X,F
  D NEWOBJ("@name")
  D PUT("use",$G(USE,"usual"))
  D PUT("text",$S($E(NAME)=",":$E(NAME,2,99),1:NAME))
- S X(1)=$P(NAME,","),NAME=$P(NAME,",",2,99)
- D:$L(X(1)) PUTARY("family",.X)
+ S X(1)=$P(NAME,","),NAME=$P(NAME,",",2,99),F=RGSER("VER")<1.8
+ D:$L(X(1)) PUTARY("family",.X):F,PUT("family",X(1)):'F
  K X
  F X=1:1:$L(NAME," ") S X(X)=$P(NAME," ",X)
  D PUTARY("given",.X)
